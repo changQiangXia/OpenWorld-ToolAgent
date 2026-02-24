@@ -11,20 +11,20 @@ It already contains:
 - Qwen2.5-VL + Whisper integration,
 - paper-planning assets for top-tier conference/journal push.
 
-This README is written as an execution manual so that future-you can start from a fresh clone and continue research immediately.
+This README is written as an execution manual so the project can be restarted from a fresh clone with minimal ramp-up.
 
 ## 中文快速导读（先看这里）
 
-如果你英文阅读不方便，可以先按这一节执行，后面英文部分当作命令参考。
+如英文阅读不便，可先按本节执行，后续英文部分作为命令参考。
 
-你现在这个仓库已经具备：
+当前仓库已具备：
 - 从数据构建到训练、评测、汇总的完整链路。
 - Week01 到 Week10 的阶段性实验资产。
 - 真实数据接入（COCO / LibriSpeech / UCF101）。
 - Benchmark v2 构建、质量门禁、冻结报告流程。
 - Qwen2.5-VL + Whisper 的独立评测通路。
 
-建议你在新机器上先做这 6 步：
+建议在新机器上先做这 6 步：
 1. 安装最小依赖：
 ```bash
 python -m pip install -U pip setuptools wheel
@@ -53,7 +53,7 @@ python scripts/data/run_quality_gates_v2.py --project-root /root/autodl-tmp/proj
 python -m unittest tests/test_main_v1_smoke.py
 ```
 
-你后续最常用的入口：
+常用入口：
 - 训练主模型：`bash scripts/train/run_main_v1.sh`
 - 主模型评测：`bash scripts/eval/eval_main_v1.sh --split-name test`
 - 真实数据全流程：`bash scripts/data/run_real_data_pipeline.sh configs/data/real_public_sources.yaml`
@@ -133,7 +133,7 @@ python -m unittest tests/test_main_v1_smoke.py
 
 ### E. 成功判据（Success Criteria）
 
-当你后续继续研究时，建议以以下标准判断是否达标：
+后续继续研究时，建议以以下标准判断是否达标：
 - 协议达标：v2 quality gate 持续 PASS，版本与报告可追溯。
 - 指标达标：核心指标相对基线稳定提升（不是单 seed 偶然提升）。
 - 统计达标：多 seed 聚合后方向一致，异常样本可解释。
@@ -142,7 +142,7 @@ python -m unittest tests/test_main_v1_smoke.py
 ## 1. Completed Work Snapshot
 
 As of 2026-02-24, the following milestones are implemented in code and docs:
-中文说明：这一节列的是你已经做完的成果，不是计划。
+中文说明：这一节列的是已完成成果，不是计划。
 
 1. Week01 to Week10 pipeline milestones:
 - Week01: problem framing + metric protocol.
@@ -567,7 +567,7 @@ Main output conventions:
 - checkpoints: `outputs/checkpoints/<exp_id>.pt`
 
 ## 10. Important Docs to Read Before Continuing Research
-中文说明：如果你打算冲顶会/顶刊，这一节文档建议按顺序读一遍。
+中文说明：如需冲顶会/顶刊，这一节文档建议按顺序读一遍。
 
 Execution and metrics:
 - `docs/problem_statement.md`
@@ -612,10 +612,10 @@ bash scripts/train/run_main_v1.sh --train-config configs/train/main_v1.yaml --se
 5. `ffmpeg` not found
 - Install ffmpeg and ensure it is in `PATH`.
 
-## 12. Next-Step Checklist for Future You
-中文说明：这是你设备升级后重启项目的最短路径。
+## 12. Next-Step Checklist
+中文说明：这是设备升级后重启项目的最短路径。
 
-When you come back with stronger hardware, do this first:
+When resuming with stronger hardware, do this first:
 
 1. Re-run baseline sanity (`check_paths`, dry-runs, smoke tests).
 2. Rebuild v2 splits from real-data-first config and pass quality gates.
