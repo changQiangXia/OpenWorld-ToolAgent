@@ -1,0 +1,52 @@
+task_name: open_world_tool_agent
+model_name: main_v1_large
+seed: 42
+log_level: INFO
+unknown_token: __unknown__
+
+data:
+  train_file: data/splits/train.jsonl
+  dev_file: data/splits/dev.jsonl
+  test_file: data/splits/test.jsonl
+
+model:
+  text_dim: 320
+  retrieval_dim: 160
+  hidden_dim: 256
+  modality_dim: 32
+  dropout: 0.1
+
+retriever:
+  tool_corpus_file: data/processed/tool_corpus.jsonl
+  top_k: 4
+
+training:
+  device: cpu
+  max_steps: 120
+  batch_size: 16
+  lr: 0.001
+  weight_decay: 0.0
+  grad_clip: 1.0
+  log_interval: 10
+  eval_interval: 30
+  max_samples_train: 120
+  max_samples_dev: 60
+
+loss:
+  tool_loss_weight: 1.0
+  unknown_loss_weight: 0.5
+
+inference:
+  unknown_threshold: 0.55
+  top_k_tools: 3
+  unknown_temperature: 1.0
+  unknown_energy_weight: 0.2
+
+runtime:
+  cost_per_request_usd: 0.0
+
+output_dirs:
+  logs: outputs/logs
+  checkpoints: outputs/checkpoints
+  predictions: outputs/predictions
+  reports: outputs/reports

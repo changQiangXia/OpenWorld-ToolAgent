@@ -1,0 +1,104 @@
+{
+  "checks": {
+    "duplicate_fingerprints": {
+      "count": 0,
+      "examples": []
+    },
+    "duplicate_ids": {
+      "count": 0,
+      "examples": []
+    },
+    "label_conflicts": {
+      "count": 0,
+      "examples": []
+    },
+    "missing_media_paths": {
+      "count": 0,
+      "examples": []
+    },
+    "schema_errors": {
+      "count": 0,
+      "examples": []
+    },
+    "semantic_errors": {
+      "count": 0,
+      "examples": []
+    }
+  },
+  "generated_at_utc": "2026-02-24T13:19:19.189576+00:00",
+  "inputs": {
+    "dev_file": "/root/autodl-tmp/project/data/splits/dev_v2_real200.jsonl",
+    "schema_file": "/root/autodl-tmp/project/docs/paper/benchmark_v2_row_schema_v1.json",
+    "test_file": "/root/autodl-tmp/project/data/splits/test_v2_real200.jsonl",
+    "train_file": "/root/autodl-tmp/project/data/splits/train_v2_real200.jsonl"
+  },
+  "split_stats": {
+    "dev": {
+      "known_unknown_distribution": {
+        "known": 166,
+        "unknown": 34
+      },
+      "mapping_distribution": {
+        "one_to_one": 200
+      },
+      "modality_distribution": {
+        "audio": 200
+      },
+      "num_rows": 200,
+      "tool_status_distribution": {
+        "newly_added": 48,
+        "offline": 51,
+        "replaced": 45,
+        "stable": 56
+      },
+      "unknown_ratio": 0.17
+    },
+    "test": {
+      "known_unknown_distribution": {
+        "known": 151,
+        "unknown": 49
+      },
+      "mapping_distribution": {
+        "one_to_one": 200
+      },
+      "modality_distribution": {
+        "audio": 200
+      },
+      "num_rows": 200,
+      "tool_status_distribution": {
+        "newly_added": 42,
+        "offline": 57,
+        "replaced": 54,
+        "stable": 47
+      },
+      "unknown_ratio": 0.245
+    },
+    "train": {
+      "known_unknown_distribution": {
+        "known": 200
+      },
+      "mapping_distribution": {
+        "one_to_one": 200
+      },
+      "modality_distribution": {
+        "audio": 200
+      },
+      "num_rows": 200,
+      "tool_status_distribution": {
+        "newly_added": 51,
+        "offline": 56,
+        "replaced": 52,
+        "stable": 41
+      },
+      "unknown_ratio": 0.0
+    }
+  },
+  "status": "PASS",
+  "total_error_count": 0,
+  "warnings": {
+    "template_query_rows": {
+      "count": 0,
+      "examples": []
+    }
+  }
+}

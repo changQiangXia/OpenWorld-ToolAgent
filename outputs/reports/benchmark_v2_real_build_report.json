@@ -1,0 +1,33 @@
+{
+  "artifacts": {
+    "dev_out": "/root/autodl-tmp/project/data/splits/dev_v2_real.jsonl",
+    "subsets_dir": "/root/autodl-tmp/project/data/splits/subsets_v2_real",
+    "test_out": "/root/autodl-tmp/project/data/splits/test_v2_real.jsonl",
+    "train_out": "/root/autodl-tmp/project/data/splits/train_v2_real.jsonl"
+  },
+  "benchmark_version": "benchmark_v2_real",
+  "build_options": {
+    "drop_template_queries": true,
+    "force_include_gold_in_candidates": true,
+    "max_samples_per_split": 200,
+    "query_strategy": "auto",
+    "real_data_first": true,
+    "strip_split_tags": true
+  },
+  "counts": {
+    "dev": 200,
+    "test": 200,
+    "train": 200
+  },
+  "dropped_template_query_count": 0,
+  "generated_at_utc": "2026-02-24T13:21:27.392364+00:00",
+  "manifest": "/root/autodl-tmp/project/data/splits/benchmark_v2_real_manifest.json",
+  "template_query_count": 0,
+  "template_query_input_count": 0,
+  "template_query_ratio": 0.0,
+  "unknown_counts": {
+    "dev": 34,
+    "test": 49,
+    "train": 0
+  }
+}

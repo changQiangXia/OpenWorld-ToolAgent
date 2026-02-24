@@ -1,0 +1,86 @@
+# ---------------------------
+# Python cache and build files
+# ---------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# ---------------------------
+# Test and lint caches
+# ---------------------------
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.nox/
+.tox/
+
+# ---------------------------
+# Virtual environments and local env files
+# ---------------------------
+.venv/
+venv/
+env/
+ENV/
+.env
+.env.*
+
+# ---------------------------
+# Notebook/editor/OS artifacts
+# ---------------------------
+.ipynb_checkpoints/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ---------------------------
+# Project-level caches and model assets (large)
+# ---------------------------
+.cache/
+models/
+
+# ---------------------------
+# Raw dataset downloads and extracted public corpora (large)
+# ---------------------------
+data/raw/public/
+data/raw/real_mm_pool.jsonl
+data/tmp_downloads/
+data/raw/**/*.zip
+data/raw/**/*.tar
+data/raw/**/*.tar.gz
+data/raw/**/*.tgz
+data/raw/**/*.rar
+data/raw/**/*.7z
+
+# ---------------------------
+# Large generated splits from real-data pipeline
+# Keep lightweight canonical splits/manifests/docs tracked.
+# ---------------------------
+data/splits/baseline1_train.jsonl
+data/splits/baseline1_dev.jsonl
+data/splits/baseline1_test.jsonl
+data/splits/baseline1_dev_unknown.jsonl
+data/splits/*_v2_real*.jsonl
+data/splits/subsets_v2_real/
+
+# ---------------------------
+# Runtime artifacts (regenerable)
+# ---------------------------
+outputs/logs/
+outputs/checkpoints/
+outputs/predictions/
+outputs/figures/
+
+# ---------------------------
+# Local temporary files
+# ---------------------------
+*.tmp
+*.temp

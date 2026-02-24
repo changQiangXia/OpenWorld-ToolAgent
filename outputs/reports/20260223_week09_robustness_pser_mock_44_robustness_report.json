@@ -1,0 +1,527 @@
+{
+  "artifacts": {
+    "csv_file": "/root/autodl-tmp/project/outputs/reports/20260223_week09_robustness_pser_mock_44_robustness_table.csv",
+    "log_file": "/root/autodl-tmp/project/outputs/logs/20260223_week09_robustness_pser_mock_44_robustness.log",
+    "report_file": "/root/autodl-tmp/project/outputs/reports/20260223_week09_robustness_pser_mock_44_robustness_report.json",
+    "trace_dir": "/root/autodl-tmp/project/outputs/predictions/20260223_week09_robustness_pser_mock_44_robustness_traces"
+  },
+  "config_hash": "fc22d6c0d5bd",
+  "exp_id": "20260223_week09_robustness_pser_mock_44",
+  "inputs": {
+    "num_missing_prediction_rows": 0.0,
+    "num_prediction_rows": 60.0,
+    "num_split_rows": 60.0,
+    "prediction_file": "/root/autodl-tmp/project/outputs/predictions/20260223_open_world_tool_agent_main_v1_mm_openworld_44_test_policy_balanced.jsonl",
+    "project_root": "/root/autodl-tmp/project",
+    "split_file": "/root/autodl-tmp/project/data/splits/test.jsonl"
+  },
+  "scenarios": [
+    {
+      "artifacts": {
+        "trace_file": "/root/autodl-tmp/project/outputs/predictions/20260223_week09_robustness_pser_mock_44_robustness_traces/20260223_week09_robustness_pser_mock_44_baseline.jsonl"
+      },
+      "delta_vs_baseline": {
+        "delta_avg_attempts": 0.0,
+        "delta_avg_latency_ms": 0.0,
+        "delta_end_to_end_success_rate": 0.0,
+        "delta_num_failures": 0.0,
+        "delta_recover_success_rate": 0.0
+      },
+      "metrics": {
+        "avg_attempts": 2.5384615384615383,
+        "avg_latency_ms": 671.6783228939926,
+        "end_to_end_success_rate": 0.46153846153846156,
+        "failure_code_distribution": {
+          "E_POLICY_CLARIFY": 26,
+          "E_POLICY_REJECT": 5,
+          "OK": 21
+        },
+        "failure_with_code_rate": 1.0,
+        "failure_with_recover_path_rate": 1.0,
+        "final_action_distribution": {
+          "clarify": 26,
+          "reject": 5,
+          "success": 21
+        },
+        "num_failures": 31.0,
+        "num_samples": 52.0,
+        "recover_success_rate": 0.2692307692307692
+      },
+      "scenario": "baseline",
+      "scenario_config": {
+        "mode": "identity"
+      },
+      "subset_metrics": {
+        "by_ambiguity_type": {
+          "lexical_ambiguity": {
+            "avg_attempts": 2.4545454545454546,
+            "num_samples": 11.0,
+            "success_rate": 0.2727272727272727
+          },
+          "missing_constraints": {
+            "avg_attempts": 2.4545454545454546,
+            "num_samples": 11.0,
+            "success_rate": 0.6363636363636364
+          },
+          "multimodal_conflict": {
+            "avg_attempts": 2.272727272727273,
+            "num_samples": 11.0,
+            "success_rate": 0.8181818181818182
+          },
+          "underspecified_tool_goal": {
+            "avg_attempts": 2.8,
+            "num_samples": 10.0,
+            "success_rate": 0.3
+          },
+          "version_drift": {
+            "avg_attempts": 2.7777777777777777,
+            "num_samples": 9.0,
+            "success_rate": 0.2222222222222222
+          }
+        },
+        "by_mapping_type": {
+          "one_to_many": {
+            "avg_attempts": 2.0,
+            "num_samples": 12.0,
+            "success_rate": 0.5833333333333334
+          },
+          "one_to_one": {
+            "avg_attempts": 2.7,
+            "num_samples": 40.0,
+            "success_rate": 0.425
+          }
+        },
+        "by_modality": {
+          "audio": {
+            "avg_attempts": 2.3333333333333335,
+            "num_samples": 15.0,
+            "success_rate": 0.6
+          },
+          "image": {
+            "avg_attempts": 3.0,
+            "num_samples": 15.0,
+            "success_rate": 0.26666666666666666
+          },
+          "text": {
+            "avg_attempts": 2.142857142857143,
+            "num_samples": 7.0,
+            "success_rate": 0.7142857142857143
+          },
+          "video": {
+            "avg_attempts": 2.466666666666667,
+            "num_samples": 15.0,
+            "success_rate": 0.4
+          }
+        },
+        "by_tool_status": {
+          "newly_added": {
+            "avg_attempts": 2.466666666666667,
+            "num_samples": 15.0,
+            "success_rate": 0.4
+          },
+          "offline": {
+            "avg_attempts": 3.0,
+            "num_samples": 15.0,
+            "success_rate": 0.26666666666666666
+          },
+          "replaced": {
+            "avg_attempts": 2.3333333333333335,
+            "num_samples": 15.0,
+            "success_rate": 0.6
+          },
+          "stable": {
+            "avg_attempts": 2.142857142857143,
+            "num_samples": 7.0,
+            "success_rate": 0.7142857142857143
+          }
+        }
+      }
+    },
+    {
+      "artifacts": {
+        "trace_file": "/root/autodl-tmp/project/outputs/predictions/20260223_week09_robustness_pser_mock_44_robustness_traces/20260223_week09_robustness_pser_mock_44_tool_newly_added.jsonl"
+      },
+      "delta_vs_baseline": {
+        "delta_avg_attempts": 0.019230769230769162,
+        "delta_avg_latency_ms": 30.989668777921338,
+        "delta_end_to_end_success_rate": 0.13461538461538458,
+        "delta_num_failures": -2.0,
+        "delta_recover_success_rate": 0.17307692307692307
+      },
+      "metrics": {
+        "avg_attempts": 2.5576923076923075,
+        "avg_latency_ms": 702.6679916719139,
+        "end_to_end_success_rate": 0.5961538461538461,
+        "failure_code_distribution": {
+          "E_POLICY_CLARIFY": 7,
+          "E_POLICY_REJECT": 22,
+          "OK": 23
+        },
+        "failure_with_code_rate": 1.0,
+        "failure_with_recover_path_rate": 1.0,
+        "final_action_distribution": {
+          "clarify": 7,
+          "reject": 22,
+          "success": 23
+        },
+        "num_failures": 29.0,
+        "num_samples": 52.0,
+        "recover_success_rate": 0.4423076923076923
+      },
+      "scenario": "tool_newly_added",
+      "scenario_config": {
+        "confidence_penalty": 0.12,
+        "known_only": true,
+        "known_to_unknown_ratio": 0.35,
+        "mode": "force_status",
+        "target_status": "newly_added",
+        "unknown_prob_boost": 0.1
+      },
+      "subset_metrics": {
+        "by_ambiguity_type": {
+          "lexical_ambiguity": {
+            "avg_attempts": 2.4545454545454546,
+            "num_samples": 11.0,
+            "success_rate": 0.45454545454545453
+          },
+          "missing_constraints": {
+            "avg_attempts": 2.6363636363636362,
+            "num_samples": 11.0,
+            "success_rate": 0.8181818181818182
+          },
+          "multimodal_conflict": {
+            "avg_attempts": 2.4545454545454546,
+            "num_samples": 11.0,
+            "success_rate": 0.9090909090909091
+          },
+          "underspecified_tool_goal": {
+            "avg_attempts": 2.7,
+            "num_samples": 10.0,
+            "success_rate": 0.4
+          },
+          "version_drift": {
+            "avg_attempts": 2.5555555555555554,
+            "num_samples": 9.0,
+            "success_rate": 0.3333333333333333
+          }
+        },
+        "by_mapping_type": {
+          "one_to_many": {
+            "avg_attempts": 2.0833333333333335,
+            "num_samples": 12.0,
+            "success_rate": 0.75
+          },
+          "one_to_one": {
+            "avg_attempts": 2.7,
+            "num_samples": 40.0,
+            "success_rate": 0.55
+          }
+        },
+        "by_modality": {
+          "audio": {
+            "avg_attempts": 2.6666666666666665,
+            "num_samples": 15.0,
+            "success_rate": 0.6666666666666666
+          },
+          "image": {
+            "avg_attempts": 2.6666666666666665,
+            "num_samples": 15.0,
+            "success_rate": 0.6
+          },
+          "text": {
+            "avg_attempts": 2.2857142857142856,
+            "num_samples": 7.0,
+            "success_rate": 0.7142857142857143
+          },
+          "video": {
+            "avg_attempts": 2.466666666666667,
+            "num_samples": 15.0,
+            "success_rate": 0.4666666666666667
+          }
+        },
+        "by_tool_status": {
+          "newly_added": {
+            "avg_attempts": 2.488372093023256,
+            "num_samples": 43.0,
+            "success_rate": 0.5813953488372093
+          },
+          "offline": {
+            "avg_attempts": 3.0,
+            "num_samples": 4.0,
+            "success_rate": 1.0
+          },
+          "replaced": {
+            "avg_attempts": 3.0,
+            "num_samples": 1.0,
+            "success_rate": 0.0
+          },
+          "stable": {
+            "avg_attempts": 2.75,
+            "num_samples": 4.0,
+            "success_rate": 0.5
+          }
+        }
+      }
+    },
+    {
+      "artifacts": {
+        "trace_file": "/root/autodl-tmp/project/outputs/predictions/20260223_week09_robustness_pser_mock_44_robustness_traces/20260223_week09_robustness_pser_mock_44_tool_offline.jsonl"
+      },
+      "delta_vs_baseline": {
+        "delta_avg_attempts": 0.4423076923076925,
+        "delta_avg_latency_ms": 114.07839287270292,
+        "delta_end_to_end_success_rate": -0.3076923076923077,
+        "delta_num_failures": 17.0,
+        "delta_recover_success_rate": -0.11538461538461536
+      },
+      "metrics": {
+        "avg_attempts": 2.980769230769231,
+        "avg_latency_ms": 785.7567157666955,
+        "end_to_end_success_rate": 0.15384615384615385,
+        "failure_code_distribution": {
+          "E_POLICY_CLARIFY": 7,
+          "E_POLICY_REJECT": 41,
+          "OK": 4
+        },
+        "failure_with_code_rate": 1.0,
+        "failure_with_recover_path_rate": 1.0,
+        "final_action_distribution": {
+          "clarify": 7,
+          "reject": 41,
+          "success": 4
+        },
+        "num_failures": 48.0,
+        "num_samples": 52.0,
+        "recover_success_rate": 0.15384615384615385
+      },
+      "scenario": "tool_offline",
+      "scenario_config": {
+        "confidence_penalty": 0.1,
+        "known_only": true,
+        "known_to_unknown_ratio": 0.0,
+        "mode": "force_status",
+        "target_status": "offline",
+        "unknown_prob_boost": 0.06
+      },
+      "subset_metrics": {
+        "by_ambiguity_type": {
+          "lexical_ambiguity": {
+            "avg_attempts": 2.909090909090909,
+            "num_samples": 11.0,
+            "success_rate": 0.0
+          },
+          "missing_constraints": {
+            "avg_attempts": 3.0,
+            "num_samples": 11.0,
+            "success_rate": 0.2727272727272727
+          },
+          "multimodal_conflict": {
+            "avg_attempts": 3.0,
+            "num_samples": 11.0,
+            "success_rate": 0.36363636363636365
+          },
+          "underspecified_tool_goal": {
+            "avg_attempts": 3.0,
+            "num_samples": 10.0,
+            "success_rate": 0.1
+          },
+          "version_drift": {
+            "avg_attempts": 3.0,
+            "num_samples": 9.0,
+            "success_rate": 0.0
+          }
+        },
+        "by_mapping_type": {
+          "one_to_many": {
+            "avg_attempts": 3.0,
+            "num_samples": 12.0,
+            "success_rate": 0.0
+          },
+          "one_to_one": {
+            "avg_attempts": 2.975,
+            "num_samples": 40.0,
+            "success_rate": 0.2
+          }
+        },
+        "by_modality": {
+          "audio": {
+            "avg_attempts": 3.0,
+            "num_samples": 15.0,
+            "success_rate": 0.0
+          },
+          "image": {
+            "avg_attempts": 3.0,
+            "num_samples": 15.0,
+            "success_rate": 0.26666666666666666
+          },
+          "text": {
+            "avg_attempts": 2.857142857142857,
+            "num_samples": 7.0,
+            "success_rate": 0.2857142857142857
+          },
+          "video": {
+            "avg_attempts": 3.0,
+            "num_samples": 15.0,
+            "success_rate": 0.13333333333333333
+          }
+        },
+        "by_tool_status": {
+          "newly_added": {
+            "avg_attempts": 3.0,
+            "num_samples": 3.0,
+            "success_rate": 0.6666666666666666
+          },
+          "offline": {
+            "avg_attempts": 3.0,
+            "num_samples": 44.0,
+            "success_rate": 0.09090909090909091
+          },
+          "replaced": {
+            "avg_attempts": 3.0,
+            "num_samples": 1.0,
+            "success_rate": 0.0
+          },
+          "stable": {
+            "avg_attempts": 2.75,
+            "num_samples": 4.0,
+            "success_rate": 0.5
+          }
+        }
+      }
+    },
+    {
+      "artifacts": {
+        "trace_file": "/root/autodl-tmp/project/outputs/predictions/20260223_week09_robustness_pser_mock_44_robustness_traces/20260223_week09_robustness_pser_mock_44_tool_replaced.jsonl"
+      },
+      "delta_vs_baseline": {
+        "delta_avg_attempts": -0.15384615384615374,
+        "delta_avg_latency_ms": -30.088070437490046,
+        "delta_end_to_end_success_rate": 0.11538461538461531,
+        "delta_num_failures": -8.0,
+        "delta_recover_success_rate": 0.09615384615384615
+      },
+      "metrics": {
+        "avg_attempts": 2.3846153846153846,
+        "avg_latency_ms": 641.5902524565025,
+        "end_to_end_success_rate": 0.5769230769230769,
+        "failure_code_distribution": {
+          "E_POLICY_CLARIFY": 7,
+          "E_POLICY_REJECT": 16,
+          "OK": 29
+        },
+        "failure_with_code_rate": 1.0,
+        "failure_with_recover_path_rate": 1.0,
+        "final_action_distribution": {
+          "clarify": 7,
+          "reject": 16,
+          "success": 29
+        },
+        "num_failures": 23.0,
+        "num_samples": 52.0,
+        "recover_success_rate": 0.36538461538461536
+      },
+      "scenario": "tool_replaced",
+      "scenario_config": {
+        "confidence_penalty": 0.08,
+        "known_only": true,
+        "known_to_unknown_ratio": 0.0,
+        "mode": "force_status",
+        "target_status": "replaced",
+        "unknown_prob_boost": 0.04
+      },
+      "subset_metrics": {
+        "by_ambiguity_type": {
+          "lexical_ambiguity": {
+            "avg_attempts": 2.3636363636363638,
+            "num_samples": 11.0,
+            "success_rate": 0.36363636363636365
+          },
+          "missing_constraints": {
+            "avg_attempts": 2.4545454545454546,
+            "num_samples": 11.0,
+            "success_rate": 0.7272727272727273
+          },
+          "multimodal_conflict": {
+            "avg_attempts": 2.090909090909091,
+            "num_samples": 11.0,
+            "success_rate": 0.9090909090909091
+          },
+          "underspecified_tool_goal": {
+            "avg_attempts": 2.5,
+            "num_samples": 10.0,
+            "success_rate": 0.4
+          },
+          "version_drift": {
+            "avg_attempts": 2.5555555555555554,
+            "num_samples": 9.0,
+            "success_rate": 0.4444444444444444
+          }
+        },
+        "by_mapping_type": {
+          "one_to_many": {
+            "avg_attempts": 1.6666666666666667,
+            "num_samples": 12.0,
+            "success_rate": 0.6666666666666666
+          },
+          "one_to_one": {
+            "avg_attempts": 2.6,
+            "num_samples": 40.0,
+            "success_rate": 0.55
+          }
+        },
+        "by_modality": {
+          "audio": {
+            "avg_attempts": 2.3333333333333335,
+            "num_samples": 15.0,
+            "success_rate": 0.6
+          },
+          "image": {
+            "avg_attempts": 2.466666666666667,
+            "num_samples": 15.0,
+            "success_rate": 0.6666666666666666
+          },
+          "text": {
+            "avg_attempts": 2.142857142857143,
+            "num_samples": 7.0,
+            "success_rate": 0.7142857142857143
+          },
+          "video": {
+            "avg_attempts": 2.466666666666667,
+            "num_samples": 15.0,
+            "success_rate": 0.4
+          }
+        },
+        "by_tool_status": {
+          "newly_added": {
+            "avg_attempts": 3.0,
+            "num_samples": 3.0,
+            "success_rate": 0.6666666666666666
+          },
+          "offline": {
+            "avg_attempts": 3.0,
+            "num_samples": 4.0,
+            "success_rate": 1.0
+          },
+          "replaced": {
+            "avg_attempts": 2.2439024390243905,
+            "num_samples": 41.0,
+            "success_rate": 0.5365853658536586
+          },
+          "stable": {
+            "avg_attempts": 2.75,
+            "num_samples": 4.0,
+            "success_rate": 0.5
+          }
+        }
+      }
+    }
+  ],
+  "selection": {
+    "complex_only": true,
+    "max_samples": 0.0,
+    "min_complex_samples": 50.0,
+    "num_complex_rows": 52.0,
+    "num_selected_rows": 52.0,
+    "num_total_input_rows": 60.0
+  }
+}

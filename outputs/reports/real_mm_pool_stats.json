@@ -1,0 +1,23 @@
+{
+  "config": "/root/autodl-tmp/project/configs/data/real_public_sources.yaml",
+  "dataset_distribution": {
+    "coco": 119972,
+    "librispeech": 120000,
+    "ucf101": 13320
+  },
+  "gold_tool_distribution": {
+    "ocr_image": 29899,
+    "qa_text": 70590,
+    "search_web": 18002,
+    "summarize_text": 50486,
+    "transcribe_audio": 84315
+  },
+  "modality_distribution": {
+    "audio": 120000,
+    "image": 119972,
+    "video": 13320
+  },
+  "num_rows": 253292.0,
+  "num_unique_ids": 253292.0,
+  "pool_jsonl": "/root/autodl-tmp/project/data/raw/real_mm_pool.jsonl"
+}

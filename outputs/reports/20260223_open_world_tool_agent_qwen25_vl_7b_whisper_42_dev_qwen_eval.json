@@ -1,0 +1,24 @@
+{
+  "artifacts": {
+    "log_file": "/root/autodl-tmp/project/outputs/logs/20260223_open_world_tool_agent_qwen25_vl_7b_whisper_42_dev_qwen_eval.log",
+    "prediction_file": "/root/autodl-tmp/project/outputs/predictions/20260223_open_world_tool_agent_qwen25_vl_7b_whisper_42_dev_qwen_eval.jsonl",
+    "report_file": "/root/autodl-tmp/project/outputs/reports/20260223_open_world_tool_agent_qwen25_vl_7b_whisper_42_dev_qwen_eval.json"
+  },
+  "config_hash": "bddf85c8e960",
+  "config_path": "/root/autodl-tmp/project/configs/eval/qwen25_vl_whisper.yaml",
+  "exp_id": "20260223_open_world_tool_agent_qwen25_vl_7b_whisper_42",
+  "metrics": {
+    "avg_cost_per_request_usd": 0.0,
+    "avg_latency_ms": 728.4116258844733,
+    "end_to_end_success_rate": 0.6666666666666666,
+    "hallucination_rate": 0.03333333333333333,
+    "json_valid_rate": 1.0,
+    "num_predictions": 60.0,
+    "tool_selection_accuracy": 0.9512195121951219,
+    "unknown_detection_f1": 0.1
+  },
+  "num_rows": 60,
+  "split_file": "/root/autodl-tmp/project/data/splits/dev.jsonl",
+  "split_name": "dev",
+  "unknown_token": "__unknown__"
+}

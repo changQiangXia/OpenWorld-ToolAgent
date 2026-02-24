@@ -1,0 +1,47 @@
+benchmark_version: benchmark_v2
+unknown_token: __unknown__
+source_name: benchmark_v2_builder
+
+inputs:
+  train: data/splits/train.jsonl
+  dev: data/splits/dev.jsonl
+  test: data/splits/test.jsonl
+
+outputs:
+  train: data/splits/train_v2.jsonl
+  dev: data/splits/dev_v2.jsonl
+  test: data/splits/test_v2.jsonl
+  subsets_dir: data/splits/subsets_v2
+  manifest: data/splits/benchmark_v2_manifest.json
+  build_report: outputs/reports/benchmark_v2_build_report.json
+  quality_report: outputs/reports/benchmark_v2_quality_report_v2splits.json
+  report_md: docs/benchmark_v2_report.md
+  changelog_md: data/splits/benchmark_v2_changelog.md
+
+annotation_defaults:
+  guideline_version: bench_v2_guideline_v1
+  annotator_id: auto_builder
+  reviewer_id: auto_reviewer
+  label_source: hybrid
+  review_status: final
+  known_confidence: 0.80
+  unknown_confidence: 0.70
+
+unknown_reason_defaults:
+  default: missing_capability
+  by_tool_status:
+    offline: tool_unavailable
+    replaced: version_incompatible
+    newly_added: missing_capability
+    stable: missing_capability
+
+build:
+  force_include_gold_in_candidates: true
+  subset_keys:
+    - modality
+    - tool_status
+    - mapping_type
+    - ambiguity_type
+    - unknown_reason_type
+    - is_unknown_gold
+  trace_notes: converted to benchmark_v2 schema

@@ -1,0 +1,73 @@
+task_name: week09_robustness
+model_name: pser_mock
+seed: 42
+log_level: INFO
+unknown_token: __unknown__
+
+inputs:
+  split_file: data/splits/test.jsonl
+  prediction_file: outputs/predictions/20260223_open_world_tool_agent_main_v1_mm_openworld_42_test_policy_balanced.jsonl
+  strict_prediction_join: true
+
+selection:
+  complex_only: true
+  min_complex_samples: 50
+  max_samples: 0
+  mapping_types:
+    - one_to_many
+  tool_statuses:
+    - offline
+    - replaced
+    - newly_added
+  ambiguity_types: []
+  include_unknown_gold: true
+
+executor:
+  type: mock
+  timeout_ms: 500.0
+
+recover:
+  max_retries: 2
+  strategy: balanced
+  unknown_threshold: 0.15
+  min_confidence: 0.35
+  fallback_action: clarify
+
+scenarios_order:
+  - baseline
+  - tool_offline
+  - tool_replaced
+  - tool_newly_added
+
+scenarios:
+  baseline:
+    mode: identity
+
+  tool_offline:
+    mode: force_status
+    target_status: offline
+    known_only: true
+    known_to_unknown_ratio: 0.0
+    unknown_prob_boost: 0.06
+    confidence_penalty: 0.10
+
+  tool_replaced:
+    mode: force_status
+    target_status: replaced
+    known_only: true
+    known_to_unknown_ratio: 0.0
+    unknown_prob_boost: 0.04
+    confidence_penalty: 0.08
+
+  tool_newly_added:
+    mode: force_status
+    target_status: newly_added
+    known_only: true
+    known_to_unknown_ratio: 0.35
+    unknown_prob_boost: 0.10
+    confidence_penalty: 0.12
+
+output_dirs:
+  logs: outputs/logs
+  predictions: outputs/predictions
+  reports: outputs/reports

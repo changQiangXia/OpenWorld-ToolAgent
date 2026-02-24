@@ -1,0 +1,37 @@
+{
+  "checks": {
+    "duplicate_fingerprints": {
+      "count": 0,
+      "examples": []
+    },
+    "duplicate_ids": {
+      "count": 0,
+      "examples": []
+    },
+    "label_conflicts": {
+      "count": 0,
+      "examples": []
+    },
+    "missing_paths": {
+      "count": 0,
+      "examples": []
+    },
+    "schema_errors": {
+      "count": 0,
+      "examples": []
+    }
+  },
+  "counts": {
+    "dev": 60,
+    "test": 60,
+    "train": 120
+  },
+  "generated_at_utc": "2026-02-23T04:16:04.409636+00:00",
+  "inputs": {
+    "dev": "/root/autodl-tmp/project/data/splits/dev.jsonl",
+    "test": "/root/autodl-tmp/project/data/splits/test.jsonl",
+    "train": "/root/autodl-tmp/project/data/splits/train.jsonl"
+  },
+  "status": "PASS",
+  "total_error_count": 0
+}

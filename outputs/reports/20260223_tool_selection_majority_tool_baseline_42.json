@@ -1,0 +1,173 @@
+{
+  "artifacts": {
+    "log_file": "/root/autodl-tmp/project/outputs/logs/20260223_tool_selection_majority_tool_baseline_42.log",
+    "prediction_file": "/root/autodl-tmp/project/outputs/predictions/20260223_tool_selection_majority_tool_baseline_42.jsonl",
+    "report_file": "/root/autodl-tmp/project/outputs/reports/20260223_tool_selection_majority_tool_baseline_42.json"
+  },
+  "config_hash": "6faa41e3148c",
+  "config_paths": {
+    "data": "/root/autodl-tmp/project/configs/data/baseline1.yaml",
+    "eval": "/root/autodl-tmp/project/configs/eval/baseline1.yaml",
+    "train": "/root/autodl-tmp/project/configs/train/baseline1.yaml"
+  },
+  "data_stats": {
+    "dev_size": 60,
+    "test_size": 60,
+    "train_size": 120
+  },
+  "exp_id": "20260223_tool_selection_majority_tool_baseline_42",
+  "metrics": {
+    "avg_cost_per_request_usd": 0.0,
+    "avg_latency_ms": 0.0002675379316012065,
+    "ece": 0.008333333333333526,
+    "end_to_end_success_rate": 0.3,
+    "hallucination_rate": 0.0,
+    "num_samples": 60.0,
+    "tool_selection_accuracy": 0.43902439024390244,
+    "unknown_detection_f1": 0.0
+  },
+  "model_summary": {
+    "majority_probability": 0.30833333333333335,
+    "majority_tool": "search_web",
+    "model_name": "majority_tool_baseline"
+  },
+  "subset_metrics": {
+    "ambiguity_type": {
+      "lexical_ambiguity": {
+        "avg_cost_per_request_usd": 0.0,
+        "avg_latency_ms": 0.00031385570764541626,
+        "ece": 0.02499999999999991,
+        "end_to_end_success_rate": 0.3333333333333333,
+        "hallucination_rate": 0.0,
+        "num_samples": 12.0,
+        "tool_selection_accuracy": 0.6666666666666666,
+        "unknown_detection_f1": 0.0
+      },
+      "missing_constraints": {
+        "avg_cost_per_request_usd": 0.0,
+        "avg_latency_ms": 0.0002787758906682332,
+        "ece": 0.14166666666666675,
+        "end_to_end_success_rate": 0.16666666666666666,
+        "hallucination_rate": 0.0,
+        "num_samples": 12.0,
+        "tool_selection_accuracy": 0.2222222222222222,
+        "unknown_detection_f1": 0.0
+      },
+      "multimodal_conflict": {
+        "avg_cost_per_request_usd": 0.0,
+        "avg_latency_ms": 0.00023934990167617798,
+        "ece": 0.14166666666666675,
+        "end_to_end_success_rate": 0.16666666666666666,
+        "hallucination_rate": 0.0,
+        "num_samples": 12.0,
+        "tool_selection_accuracy": 0.25,
+        "unknown_detection_f1": 0.0
+      },
+      "underspecified_tool_goal": {
+        "avg_cost_per_request_usd": 0.0,
+        "avg_latency_ms": 0.0002523884177207947,
+        "ece": 0.10833333333333328,
+        "end_to_end_success_rate": 0.4166666666666667,
+        "hallucination_rate": 0.0,
+        "num_samples": 12.0,
+        "tool_selection_accuracy": 0.7142857142857143,
+        "unknown_detection_f1": 0.0
+      },
+      "version_drift": {
+        "avg_cost_per_request_usd": 0.0,
+        "avg_latency_ms": 0.00025331974029541016,
+        "ece": 0.10833333333333328,
+        "end_to_end_success_rate": 0.4166666666666667,
+        "hallucination_rate": 0.0,
+        "num_samples": 12.0,
+        "tool_selection_accuracy": 0.45454545454545453,
+        "unknown_detection_f1": 0.0
+      }
+    },
+    "modality": {
+      "audio": {
+        "avg_cost_per_request_usd": 0.0,
+        "avg_latency_ms": 0.00024760762850443524,
+        "ece": 0.041666666666666796,
+        "end_to_end_success_rate": 0.26666666666666666,
+        "hallucination_rate": 0.0,
+        "num_samples": 15.0,
+        "tool_selection_accuracy": 0.5,
+        "unknown_detection_f1": 0.0
+      },
+      "image": {
+        "avg_cost_per_request_usd": 0.0,
+        "avg_latency_ms": 0.0002833704153696696,
+        "ece": 0.024999999999999856,
+        "end_to_end_success_rate": 0.3333333333333333,
+        "hallucination_rate": 0.0,
+        "num_samples": 15.0,
+        "tool_selection_accuracy": 0.45454545454545453,
+        "unknown_detection_f1": 0.0
+      },
+      "text": {
+        "avg_cost_per_request_usd": 0.0,
+        "avg_latency_ms": 0.0002987682819366455,
+        "ece": 0.041666666666666796,
+        "end_to_end_success_rate": 0.26666666666666666,
+        "hallucination_rate": 0.0,
+        "num_samples": 15.0,
+        "tool_selection_accuracy": 0.4,
+        "unknown_detection_f1": 0.0
+      },
+      "video": {
+        "avg_cost_per_request_usd": 0.0,
+        "avg_latency_ms": 0.00024040540059407553,
+        "ece": 0.024999999999999856,
+        "end_to_end_success_rate": 0.3333333333333333,
+        "hallucination_rate": 0.0,
+        "num_samples": 15.0,
+        "tool_selection_accuracy": 0.4166666666666667,
+        "unknown_detection_f1": 0.0
+      }
+    },
+    "tool_status": {
+      "newly_added": {
+        "avg_cost_per_request_usd": 0.0,
+        "avg_latency_ms": 0.00024040540059407553,
+        "ece": 0.024999999999999856,
+        "end_to_end_success_rate": 0.3333333333333333,
+        "hallucination_rate": 0.0,
+        "num_samples": 15.0,
+        "tool_selection_accuracy": 0.4166666666666667,
+        "unknown_detection_f1": 0.0
+      },
+      "offline": {
+        "avg_cost_per_request_usd": 0.0,
+        "avg_latency_ms": 0.0002833704153696696,
+        "ece": 0.024999999999999856,
+        "end_to_end_success_rate": 0.3333333333333333,
+        "hallucination_rate": 0.0,
+        "num_samples": 15.0,
+        "tool_selection_accuracy": 0.45454545454545453,
+        "unknown_detection_f1": 0.0
+      },
+      "replaced": {
+        "avg_cost_per_request_usd": 0.0,
+        "avg_latency_ms": 0.00024760762850443524,
+        "ece": 0.041666666666666796,
+        "end_to_end_success_rate": 0.26666666666666666,
+        "hallucination_rate": 0.0,
+        "num_samples": 15.0,
+        "tool_selection_accuracy": 0.5,
+        "unknown_detection_f1": 0.0
+      },
+      "stable": {
+        "avg_cost_per_request_usd": 0.0,
+        "avg_latency_ms": 0.0002987682819366455,
+        "ece": 0.041666666666666796,
+        "end_to_end_success_rate": 0.26666666666666666,
+        "hallucination_rate": 0.0,
+        "num_samples": 15.0,
+        "tool_selection_accuracy": 0.4,
+        "unknown_detection_f1": 0.0
+      }
+    }
+  },
+  "timestamp_utc": "2026-02-23T03:47:57.396749+00:00"
+}

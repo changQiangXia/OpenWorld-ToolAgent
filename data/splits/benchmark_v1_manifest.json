@@ -1,0 +1,90 @@
+{
+  "annotation_version": "ann_v1",
+  "benchmark_version": "benchmark_v1",
+  "generated_at_utc": "2026-02-23T04:16:04.370291+00:00",
+  "mapping_distribution": {
+    "dev": {
+      "one_to_many": 9,
+      "one_to_one": 51
+    },
+    "test": {
+      "one_to_many": 12,
+      "one_to_one": 48
+    },
+    "train": {
+      "one_to_many": 28,
+      "one_to_one": 92
+    }
+  },
+  "one_to_many_ratio": 0.25,
+  "outputs": {
+    "dev": "/root/autodl-tmp/project/data/splits/dev.jsonl",
+    "subsets_dir": "/root/autodl-tmp/project/data/splits/subsets",
+    "test": "/root/autodl-tmp/project/data/splits/test.jsonl",
+    "train": "/root/autodl-tmp/project/data/splits/train.jsonl"
+  },
+  "seed": 42,
+  "sizes": {
+    "dev": 60,
+    "test": 60,
+    "total": 240,
+    "train": 120
+  },
+  "source": {
+    "dev_in": "/root/autodl-tmp/project/data/splits/baseline1_dev.jsonl",
+    "source_name": "baseline1_synthetic",
+    "test_in": "/root/autodl-tmp/project/data/splits/baseline1_test.jsonl",
+    "train_in": "/root/autodl-tmp/project/data/splits/baseline1_train.jsonl"
+  },
+  "split_id_hash": {
+    "dev": "bcebf2473bc26592",
+    "test": "1a879d6a255264e8",
+    "train": "625113d918be51c3"
+  },
+  "subset_files": {
+    "files": [
+      "/root/autodl-tmp/project/data/splits/subsets/ambiguity_type_lexical_ambiguity.json",
+      "/root/autodl-tmp/project/data/splits/subsets/ambiguity_type_missing_constraints.json",
+      "/root/autodl-tmp/project/data/splits/subsets/ambiguity_type_multimodal_conflict.json",
+      "/root/autodl-tmp/project/data/splits/subsets/ambiguity_type_underspecified_tool_goal.json",
+      "/root/autodl-tmp/project/data/splits/subsets/ambiguity_type_version_drift.json",
+      "/root/autodl-tmp/project/data/splits/subsets/mapping_type_one_to_many.json",
+      "/root/autodl-tmp/project/data/splits/subsets/mapping_type_one_to_one.json",
+      "/root/autodl-tmp/project/data/splits/subsets/modality_audio.json",
+      "/root/autodl-tmp/project/data/splits/subsets/modality_image.json",
+      "/root/autodl-tmp/project/data/splits/subsets/modality_text.json",
+      "/root/autodl-tmp/project/data/splits/subsets/modality_video.json",
+      "/root/autodl-tmp/project/data/splits/subsets/tool_status_newly_added.json",
+      "/root/autodl-tmp/project/data/splits/subsets/tool_status_offline.json",
+      "/root/autodl-tmp/project/data/splits/subsets/tool_status_replaced.json",
+      "/root/autodl-tmp/project/data/splits/subsets/tool_status_stable.json"
+    ],
+    "num_files": 15,
+    "summary": {
+      "ambiguity_type": {
+        "lexical_ambiguity": 48,
+        "missing_constraints": 48,
+        "multimodal_conflict": 48,
+        "underspecified_tool_goal": 48,
+        "version_drift": 48
+      },
+      "mapping_type": {
+        "one_to_many": 49,
+        "one_to_one": 191
+      },
+      "modality": {
+        "audio": 60,
+        "image": 60,
+        "text": 60,
+        "video": 60
+      },
+      "tool_status": {
+        "newly_added": 60,
+        "offline": 60,
+        "replaced": 60,
+        "stable": 60
+      }
+    }
+  },
+  "unknown_token": "__unknown__"
+}

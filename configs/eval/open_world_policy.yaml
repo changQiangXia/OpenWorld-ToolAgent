@@ -1,0 +1,28 @@
+default_strategy: balanced
+unknown_token: __unknown__
+
+calibration:
+  min_threshold: 0.05
+  max_threshold: 0.95
+  num_steps: 181
+  objective: unknown_f1_constrained
+  max_false_reject_rate: 0.20
+  utility_alpha: 0.5
+
+strategies:
+  strict:
+    threshold_delta: -0.08
+    min_confidence: 0.45
+    reject_if_not_retrieved: true
+  balanced:
+    threshold_delta: 0.0
+    min_confidence: 0.35
+    reject_if_not_retrieved: false
+  recall-first:
+    threshold_delta: 0.08
+    min_confidence: 0.25
+    reject_if_not_retrieved: false
+
+clarify:
+  enabled: true
+  low_confidence_to_clarify: true

@@ -1,0 +1,24 @@
+{
+  "category_counts": {
+    "hallucination": 20,
+    "one_to_many_miss": 10,
+    "reject_failure_unknown_miss": 31,
+    "success": 30,
+    "wrong_tool_selection": 29
+  },
+  "error_rate": 0.75,
+  "inputs": [
+    "/root/autodl-tmp/project/outputs/reports/main_v1_week06_dev_seed42.json",
+    "/root/autodl-tmp/project/outputs/reports/main_v1_week06_test_seed42.json"
+  ],
+  "num_fail": 90.0,
+  "num_success": 30.0,
+  "num_total": 120.0,
+  "root_cause_counts": {
+    "one_to_many_alignment_gap": 6,
+    "retrieval_miss": 24,
+    "selector_confusion": 29,
+    "unknown_calibration_failure": 31
+  },
+  "success_rate": 0.25
+}

@@ -1,0 +1,14 @@
+{
+  "exp_id": "20260223_tool_selection_majority_tool_baseline_42",
+  "metrics": {
+    "avg_cost_per_request_usd": 0.0,
+    "avg_latency_ms": 0.0002675379316012065,
+    "ece": 0.008333333333333526,
+    "end_to_end_success_rate": 0.3,
+    "hallucination_rate": 0.0,
+    "num_samples": 60.0,
+    "tool_selection_accuracy": 0.43902439024390244,
+    "unknown_detection_f1": 0.0
+  },
+  "prediction_file": "/root/autodl-tmp/project/outputs/predictions/20260223_tool_selection_majority_tool_baseline_42.jsonl"
+}

@@ -1,0 +1,627 @@
+{
+  "category_counts": {
+    "hallucination": 8,
+    "one_to_many_miss": 5,
+    "reject_failure_unknown_miss": 19,
+    "success": 14,
+    "wrong_tool_selection": 14
+  },
+  "confidence_stats_on_wrong_known": {
+    "count": 27.0,
+    "max": 0.8141475915908813,
+    "mean": 0.5067660952055896,
+    "min": 0.27523788809776306
+  },
+  "error_rate": 0.7666666666666667,
+  "failure_rates": {
+    "by_ambiguity_type": {
+      "lexical_ambiguity": {
+        "fail_rate": 0.75,
+        "num_fail": 9.0,
+        "num_total": 12.0
+      },
+      "missing_constraints": {
+        "fail_rate": 0.8333333333333334,
+        "num_fail": 10.0,
+        "num_total": 12.0
+      },
+      "multimodal_conflict": {
+        "fail_rate": 0.75,
+        "num_fail": 9.0,
+        "num_total": 12.0
+      },
+      "underspecified_tool_goal": {
+        "fail_rate": 0.8333333333333334,
+        "num_fail": 10.0,
+        "num_total": 12.0
+      },
+      "version_drift": {
+        "fail_rate": 0.6666666666666666,
+        "num_fail": 8.0,
+        "num_total": 12.0
+      }
+    },
+    "by_mapping_type": {
+      "one_to_many": {
+        "fail_rate": 0.5555555555555556,
+        "num_fail": 5.0,
+        "num_total": 9.0
+      },
+      "one_to_one": {
+        "fail_rate": 0.803921568627451,
+        "num_fail": 41.0,
+        "num_total": 51.0
+      }
+    },
+    "by_modality": {
+      "audio": {
+        "fail_rate": 0.8666666666666667,
+        "num_fail": 13.0,
+        "num_total": 15.0
+      },
+      "image": {
+        "fail_rate": 0.6666666666666666,
+        "num_fail": 10.0,
+        "num_total": 15.0
+      },
+      "text": {
+        "fail_rate": 0.8,
+        "num_fail": 12.0,
+        "num_total": 15.0
+      },
+      "video": {
+        "fail_rate": 0.7333333333333333,
+        "num_fail": 11.0,
+        "num_total": 15.0
+      }
+    },
+    "by_tool_status": {
+      "newly_added": {
+        "fail_rate": 0.7333333333333333,
+        "num_fail": 11.0,
+        "num_total": 15.0
+      },
+      "offline": {
+        "fail_rate": 0.6666666666666666,
+        "num_fail": 10.0,
+        "num_total": 15.0
+      },
+      "replaced": {
+        "fail_rate": 0.8666666666666667,
+        "num_fail": 13.0,
+        "num_total": 15.0
+      },
+      "stable": {
+        "fail_rate": 0.8,
+        "num_fail": 12.0,
+        "num_total": 15.0
+      }
+    }
+  },
+  "input_prediction_file": "/root/autodl-tmp/project/outputs/predictions/20260223_open_world_tool_agent_main_v1_mm_openworld_42_dev.jsonl",
+  "manual_cases_file": "/root/autodl-tmp/project/outputs/reports/main_v1_week06_dev_seed42_cases.jsonl",
+  "manual_review_cases": [
+    {
+      "ambiguity_type": "underspecified_tool_goal",
+      "category": "reject_failure_unknown_miss",
+      "confidence": 0.3242311179637909,
+      "gold_tools": [
+        "__unknown__"
+      ],
+      "id": "dev_00042",
+      "mapping_type": "one_to_one",
+      "modality": "audio",
+      "pred_tool": "ocr_image",
+      "query": "Synthetic query 42 for audio (underspecified_tool_goal) [split=dev id=dev_00042]",
+      "retrieved_tools": [
+        "transcribe_audio",
+        "ocr_image",
+        "search_web",
+        "summarize_text"
+      ],
+      "review_note": "Unknown \u6837\u672c\u88ab\u9519\u8bef\u6267\u884c\uff1b\u4f18\u5148\u505a unknown \u9608\u503c\u6807\u5b9a\u4e0e\u6b63\u8d1f\u6837\u672c\u518d\u5e73\u8861\u3002",
+      "root_cause": "unknown_calibration_failure",
+      "severity": 7.888650566339493,
+      "split": "dev",
+      "tool_status": "replaced",
+      "unknown_prob": 0.1113494336605072
+    },
+    {
+      "ambiguity_type": "underspecified_tool_goal",
+      "category": "reject_failure_unknown_miss",
+      "confidence": 0.30370697379112244,
+      "gold_tools": [
+        "__unknown__"
+      ],
+      "id": "dev_00027",
+      "mapping_type": "one_to_one",
+      "modality": "video",
+      "pred_tool": "ocr_image",
+      "query": "Synthetic query 27 for video (underspecified_tool_goal) [split=dev id=dev_00027]",
+      "retrieved_tools": [
+        "video_caption",
+        "ocr_image",
+        "search_web",
+        "summarize_text"
+      ],
+      "review_note": "Unknown \u6837\u672c\u88ab\u9519\u8bef\u6267\u884c\uff1b\u4f18\u5148\u505a unknown \u9608\u503c\u6807\u5b9a\u4e0e\u6b63\u8d1f\u6837\u672c\u518d\u5e73\u8861\u3002",
+      "root_cause": "unknown_calibration_failure",
+      "severity": 7.88726045191288,
+      "split": "dev",
+      "tool_status": "newly_added",
+      "unknown_prob": 0.11273954808712006
+    },
+    {
+      "ambiguity_type": "missing_constraints",
+      "category": "reject_failure_unknown_miss",
+      "confidence": 0.246563121676445,
+      "gold_tools": [
+        "__unknown__"
+      ],
+      "id": "dev_00031",
+      "mapping_type": "one_to_one",
+      "modality": "video",
+      "pred_tool": "qa_text",
+      "query": "Synthetic query 31 for video (missing_constraints) [split=dev id=dev_00031]",
+      "retrieved_tools": [
+        "video_caption",
+        "ocr_image",
+        "search_web",
+        "summarize_text"
+      ],
+      "review_note": "Unknown \u6837\u672c\u88ab\u9519\u8bef\u6267\u884c\uff1b\u4f18\u5148\u505a unknown \u9608\u503c\u6807\u5b9a\u4e0e\u6b63\u8d1f\u6837\u672c\u518d\u5e73\u8861\u3002",
+      "root_cause": "unknown_calibration_failure",
+      "severity": 7.885995343327522,
+      "split": "dev",
+      "tool_status": "newly_added",
+      "unknown_prob": 0.11400465667247772
+    },
+    {
+      "ambiguity_type": "underspecified_tool_goal",
+      "category": "reject_failure_unknown_miss",
+      "confidence": 0.31210586428642273,
+      "gold_tools": [
+        "__unknown__"
+      ],
+      "id": "dev_00007",
+      "mapping_type": "one_to_one",
+      "modality": "video",
+      "pred_tool": "search_web",
+      "query": "Synthetic query 7 for video (underspecified_tool_goal) [split=dev id=dev_00007]",
+      "retrieved_tools": [
+        "video_caption",
+        "ocr_image",
+        "search_web",
+        "summarize_text"
+      ],
+      "review_note": "Unknown \u6837\u672c\u88ab\u9519\u8bef\u6267\u884c\uff1b\u4f18\u5148\u505a unknown \u9608\u503c\u6807\u5b9a\u4e0e\u6b63\u8d1f\u6837\u672c\u518d\u5e73\u8861\u3002",
+      "root_cause": "unknown_calibration_failure",
+      "severity": 7.884544238448143,
+      "split": "dev",
+      "tool_status": "newly_added",
+      "unknown_prob": 0.115455761551857
+    },
+    {
+      "ambiguity_type": "lexical_ambiguity",
+      "category": "reject_failure_unknown_miss",
+      "confidence": 0.38356879353523254,
+      "gold_tools": [
+        "__unknown__"
+      ],
+      "id": "dev_00000",
+      "mapping_type": "one_to_one",
+      "modality": "text",
+      "pred_tool": "transcribe_audio",
+      "query": "Synthetic query 0 for text (lexical_ambiguity) [split=dev id=dev_00000]",
+      "retrieved_tools": [
+        "search_web",
+        "summarize_text",
+        "calendar_api",
+        "legacy_weather"
+      ],
+      "review_note": "Unknown \u6837\u672c\u88ab\u9519\u8bef\u6267\u884c\uff1b\u4f18\u5148\u505a unknown \u9608\u503c\u6807\u5b9a\u4e0e\u6b63\u8d1f\u6837\u672c\u518d\u5e73\u8861\u3002",
+      "root_cause": "unknown_calibration_failure",
+      "severity": 7.877730563282967,
+      "split": "dev",
+      "tool_status": "stable",
+      "unknown_prob": 0.12226943671703339
+    },
+    {
+      "ambiguity_type": "underspecified_tool_goal",
+      "category": "wrong_tool_selection",
+      "confidence": 0.8141475915908813,
+      "gold_tools": [
+        "search_web"
+      ],
+      "id": "dev_00057",
+      "mapping_type": "one_to_one",
+      "modality": "image",
+      "pred_tool": "ocr_image",
+      "query": "Synthetic query 57 for image (underspecified_tool_goal) [split=dev id=dev_00057]",
+      "retrieved_tools": [
+        "ocr_image",
+        "ocr_image",
+        "search_web",
+        "summarize_text"
+      ],
+      "review_note": "\u68c0\u7d22\u5019\u9009\u5305\u542b\u6b63\u786e\u5de5\u5177\u4f46\u9009\u62e9\u9519\u8bef\uff1b\u9700\u4f18\u5316\u9009\u62e9\u5934\u6821\u51c6\u3002",
+      "root_cause": "selector_confusion",
+      "severity": 4.814147591590881,
+      "split": "dev",
+      "tool_status": "offline",
+      "unknown_prob": 0.16564056277275085
+    },
+    {
+      "ambiguity_type": "multimodal_conflict",
+      "category": "wrong_tool_selection",
+      "confidence": 0.7409842014312744,
+      "gold_tools": [
+        "transcribe_audio"
+      ],
+      "id": "dev_00038",
+      "mapping_type": "one_to_one",
+      "modality": "audio",
+      "pred_tool": "ocr_image",
+      "query": "Synthetic query 38 for audio (multimodal_conflict) [split=dev id=dev_00038]",
+      "retrieved_tools": [
+        "transcribe_audio",
+        "ocr_image",
+        "search_web",
+        "summarize_text"
+      ],
+      "review_note": "\u68c0\u7d22\u5019\u9009\u5305\u542b\u6b63\u786e\u5de5\u5177\u4f46\u9009\u62e9\u9519\u8bef\uff1b\u9700\u4f18\u5316\u9009\u62e9\u5934\u6821\u51c6\u3002",
+      "root_cause": "selector_confusion",
+      "severity": 4.740984201431274,
+      "split": "dev",
+      "tool_status": "replaced",
+      "unknown_prob": 0.15500476956367493
+    },
+    {
+      "ambiguity_type": "underspecified_tool_goal",
+      "category": "wrong_tool_selection",
+      "confidence": 0.7359060049057007,
+      "gold_tools": [
+        "qa_text"
+      ],
+      "id": "dev_00022",
+      "mapping_type": "one_to_one",
+      "modality": "audio",
+      "pred_tool": "ocr_image",
+      "query": "Synthetic query 22 for audio (underspecified_tool_goal) [split=dev id=dev_00022]",
+      "retrieved_tools": [
+        "transcribe_audio",
+        "ocr_image",
+        "search_web",
+        "summarize_text"
+      ],
+      "review_note": "\u68c0\u7d22\u5019\u9009\u5305\u542b\u6b63\u786e\u5de5\u5177\u4f46\u9009\u62e9\u9519\u8bef\uff1b\u9700\u4f18\u5316\u9009\u62e9\u5934\u6821\u51c6\u3002",
+      "root_cause": "selector_confusion",
+      "severity": 4.735906004905701,
+      "split": "dev",
+      "tool_status": "replaced",
+      "unknown_prob": 0.1529754251241684
+    },
+    {
+      "ambiguity_type": "version_drift",
+      "category": "wrong_tool_selection",
+      "confidence": 0.715120255947113,
+      "gold_tools": [
+        "summarize_text"
+      ],
+      "id": "dev_00029",
+      "mapping_type": "one_to_one",
+      "modality": "image",
+      "pred_tool": "search_web",
+      "query": "Synthetic query 29 for image (version_drift) [split=dev id=dev_00029]",
+      "retrieved_tools": [
+        "ocr_image",
+        "ocr_image",
+        "search_web",
+        "summarize_text"
+      ],
+      "review_note": "\u68c0\u7d22\u5019\u9009\u5305\u542b\u6b63\u786e\u5de5\u5177\u4f46\u9009\u62e9\u9519\u8bef\uff1b\u9700\u4f18\u5316\u9009\u62e9\u5934\u6821\u51c6\u3002",
+      "root_cause": "selector_confusion",
+      "severity": 4.715120255947113,
+      "split": "dev",
+      "tool_status": "offline",
+      "unknown_prob": 0.15346622467041016
+    },
+    {
+      "ambiguity_type": "underspecified_tool_goal",
+      "category": "wrong_tool_selection",
+      "confidence": 0.6656428575515747,
+      "gold_tools": [
+        "search_web"
+      ],
+      "id": "dev_00002",
+      "mapping_type": "one_to_one",
+      "modality": "audio",
+      "pred_tool": "ocr_image",
+      "query": "Synthetic query 2 for audio (underspecified_tool_goal) [split=dev id=dev_00002]",
+      "retrieved_tools": [
+        "transcribe_audio",
+        "ocr_image",
+        "search_web",
+        "summarize_text"
+      ],
+      "review_note": "\u68c0\u7d22\u5019\u9009\u5305\u542b\u6b63\u786e\u5de5\u5177\u4f46\u9009\u62e9\u9519\u8bef\uff1b\u9700\u4f18\u5316\u9009\u62e9\u5934\u6821\u51c6\u3002",
+      "root_cause": "selector_confusion",
+      "severity": 4.665642857551575,
+      "split": "dev",
+      "tool_status": "replaced",
+      "unknown_prob": 0.14242281019687653
+    },
+    {
+      "ambiguity_type": "version_drift",
+      "category": "hallucination",
+      "confidence": 0.5678519606590271,
+      "gold_tools": [
+        "search_web"
+      ],
+      "id": "dev_00004",
+      "mapping_type": "one_to_one",
+      "modality": "text",
+      "pred_tool": "transcribe_audio",
+      "query": "Synthetic query 4 for text (version_drift) [split=dev id=dev_00004]",
+      "retrieved_tools": [
+        "search_web",
+        "summarize_text",
+        "calendar_api",
+        "legacy_weather"
+      ],
+      "review_note": "\u9884\u6d4b\u5de5\u5177\u4e0d\u5728\u68c0\u7d22\u5019\u9009\uff1b\u9700\u52a0\u5f3a\u68c0\u7d22\u8986\u76d6\u4e0e\u5019\u9009\u7ea6\u675f\u3002",
+      "root_cause": "retrieval_miss",
+      "severity": 5.567851960659027,
+      "split": "dev",
+      "tool_status": "stable",
+      "unknown_prob": 0.14079423248767853
+    },
+    {
+      "ambiguity_type": "missing_constraints",
+      "category": "hallucination",
+      "confidence": 0.5298039317131042,
+      "gold_tools": [
+        "qa_text"
+      ],
+      "id": "dev_00041",
+      "mapping_type": "one_to_one",
+      "modality": "image",
+      "pred_tool": "transcribe_audio",
+      "query": "Synthetic query 41 for image (missing_constraints) [split=dev id=dev_00041]",
+      "retrieved_tools": [
+        "ocr_image",
+        "ocr_image",
+        "search_web",
+        "summarize_text"
+      ],
+      "review_note": "\u9884\u6d4b\u5de5\u5177\u4e0d\u5728\u68c0\u7d22\u5019\u9009\uff1b\u9700\u52a0\u5f3a\u68c0\u7d22\u8986\u76d6\u4e0e\u5019\u9009\u7ea6\u675f\u3002",
+      "root_cause": "retrieval_miss",
+      "severity": 5.529803931713104,
+      "split": "dev",
+      "tool_status": "offline",
+      "unknown_prob": 0.14290975034236908
+    },
+    {
+      "ambiguity_type": "underspecified_tool_goal",
+      "category": "hallucination",
+      "confidence": 0.5026032328605652,
+      "gold_tools": [
+        "search_web"
+      ],
+      "id": "dev_00052",
+      "mapping_type": "one_to_one",
+      "modality": "text",
+      "pred_tool": "ocr_image",
+      "query": "Synthetic query 52 for text (underspecified_tool_goal) [split=dev id=dev_00052]",
+      "retrieved_tools": [
+        "search_web",
+        "summarize_text",
+        "calendar_api",
+        "legacy_weather"
+      ],
+      "review_note": "\u9884\u6d4b\u5de5\u5177\u4e0d\u5728\u68c0\u7d22\u5019\u9009\uff1b\u9700\u52a0\u5f3a\u68c0\u7d22\u8986\u76d6\u4e0e\u5019\u9009\u7ea6\u675f\u3002",
+      "root_cause": "retrieval_miss",
+      "severity": 5.502603232860565,
+      "split": "dev",
+      "tool_status": "stable",
+      "unknown_prob": 0.12939418852329254
+    },
+    {
+      "ambiguity_type": "missing_constraints",
+      "category": "hallucination",
+      "confidence": 0.49771085381507874,
+      "gold_tools": [
+        "transcribe_audio"
+      ],
+      "id": "dev_00056",
+      "mapping_type": "one_to_one",
+      "modality": "text",
+      "pred_tool": "ocr_image",
+      "query": "Synthetic query 56 for text (missing_constraints) [split=dev id=dev_00056]",
+      "retrieved_tools": [
+        "search_web",
+        "summarize_text",
+        "calendar_api",
+        "legacy_weather"
+      ],
+      "review_note": "\u9884\u6d4b\u5de5\u5177\u4e0d\u5728\u68c0\u7d22\u5019\u9009\uff1b\u9700\u52a0\u5f3a\u68c0\u7d22\u8986\u76d6\u4e0e\u5019\u9009\u7ea6\u675f\u3002",
+      "root_cause": "retrieval_miss",
+      "severity": 5.497710853815079,
+      "split": "dev",
+      "tool_status": "stable",
+      "unknown_prob": 0.13611026108264923
+    },
+    {
+      "ambiguity_type": "multimodal_conflict",
+      "category": "hallucination",
+      "confidence": 0.4604976773262024,
+      "gold_tools": [
+        "transcribe_audio"
+      ],
+      "id": "dev_00048",
+      "mapping_type": "one_to_one",
+      "modality": "text",
+      "pred_tool": "ocr_image",
+      "query": "Synthetic query 48 for text (multimodal_conflict) [split=dev id=dev_00048]",
+      "retrieved_tools": [
+        "search_web",
+        "summarize_text",
+        "calendar_api",
+        "legacy_weather"
+      ],
+      "review_note": "\u9884\u6d4b\u5de5\u5177\u4e0d\u5728\u68c0\u7d22\u5019\u9009\uff1b\u9700\u52a0\u5f3a\u68c0\u7d22\u8986\u76d6\u4e0e\u5019\u9009\u7ea6\u675f\u3002",
+      "root_cause": "retrieval_miss",
+      "severity": 5.460497677326202,
+      "split": "dev",
+      "tool_status": "stable",
+      "unknown_prob": 0.12049666792154312
+    },
+    {
+      "ambiguity_type": "version_drift",
+      "category": "one_to_many_miss",
+      "confidence": 0.7405290007591248,
+      "gold_tools": [
+        "qa_text",
+        "summarize_text"
+      ],
+      "id": "dev_00049",
+      "mapping_type": "one_to_many",
+      "modality": "image",
+      "pred_tool": "search_web",
+      "query": "Synthetic query 49 for image (version_drift) [split=dev id=dev_00049]",
+      "retrieved_tools": [
+        "ocr_image",
+        "ocr_image",
+        "search_web",
+        "summarize_text"
+      ],
+      "review_note": "one-to-many \u672a\u547d\u4e2d\u4efb\u4e00\u6b63\u786e\u5de5\u5177\uff1b\u9700\u6539\u8fdb\u591a\u6807\u7b7e\u76ee\u6807\u4e0e\u89e3\u7801\u7b56\u7565\u3002",
+      "root_cause": "one_to_many_alignment_gap",
+      "severity": 5.240529000759125,
+      "split": "dev",
+      "tool_status": "offline",
+      "unknown_prob": 0.1568090170621872
+    },
+    {
+      "ambiguity_type": "lexical_ambiguity",
+      "category": "one_to_many_miss",
+      "confidence": 0.4890177249908447,
+      "gold_tools": [
+        "qa_text",
+        "search_web"
+      ],
+      "id": "dev_00040",
+      "mapping_type": "one_to_many",
+      "modality": "text",
+      "pred_tool": "transcribe_audio",
+      "query": "Synthetic query 40 for text (lexical_ambiguity) [split=dev id=dev_00040]",
+      "retrieved_tools": [
+        "search_web",
+        "summarize_text",
+        "calendar_api",
+        "legacy_weather"
+      ],
+      "review_note": "one-to-many \u672a\u547d\u4e2d\u4efb\u4e00\u6b63\u786e\u5de5\u5177\uff1b\u9700\u6539\u8fdb\u591a\u6807\u7b7e\u76ee\u6807\u4e0e\u89e3\u7801\u7b56\u7565\u3002",
+      "root_cause": "retrieval_miss",
+      "severity": 4.989017724990845,
+      "split": "dev",
+      "tool_status": "stable",
+      "unknown_prob": 0.1386258751153946
+    },
+    {
+      "ambiguity_type": "multimodal_conflict",
+      "category": "one_to_many_miss",
+      "confidence": 0.32489633560180664,
+      "gold_tools": [
+        "summarize_text",
+        "transcribe_audio"
+      ],
+      "id": "dev_00023",
+      "mapping_type": "one_to_many",
+      "modality": "video",
+      "pred_tool": "search_web",
+      "query": "Synthetic query 23 for video (multimodal_conflict) [split=dev id=dev_00023]",
+      "retrieved_tools": [
+        "video_caption",
+        "ocr_image",
+        "search_web",
+        "summarize_text"
+      ],
+      "review_note": "one-to-many \u672a\u547d\u4e2d\u4efb\u4e00\u6b63\u786e\u5de5\u5177\uff1b\u9700\u6539\u8fdb\u591a\u6807\u7b7e\u76ee\u6807\u4e0e\u89e3\u7801\u7b56\u7565\u3002",
+      "root_cause": "one_to_many_alignment_gap",
+      "severity": 4.824896335601807,
+      "split": "dev",
+      "tool_status": "newly_added",
+      "unknown_prob": 0.10978205502033234
+    },
+    {
+      "ambiguity_type": "multimodal_conflict",
+      "category": "one_to_many_miss",
+      "confidence": 0.2921375632286072,
+      "gold_tools": [
+        "qa_text",
+        "transcribe_audio"
+      ],
+      "id": "dev_00003",
+      "mapping_type": "one_to_many",
+      "modality": "video",
+      "pred_tool": "search_web",
+      "query": "Synthetic query 3 for video (multimodal_conflict) [split=dev id=dev_00003]",
+      "retrieved_tools": [
+        "video_caption",
+        "ocr_image",
+        "search_web",
+        "summarize_text"
+      ],
+      "review_note": "one-to-many \u672a\u547d\u4e2d\u4efb\u4e00\u6b63\u786e\u5de5\u5177\uff1b\u9700\u6539\u8fdb\u591a\u6807\u7b7e\u76ee\u6807\u4e0e\u89e3\u7801\u7b56\u7565\u3002",
+      "root_cause": "one_to_many_alignment_gap",
+      "severity": 4.792137563228607,
+      "split": "dev",
+      "tool_status": "newly_added",
+      "unknown_prob": 0.10887187719345093
+    },
+    {
+      "ambiguity_type": "underspecified_tool_goal",
+      "category": "one_to_many_miss",
+      "confidence": 0.27523788809776306,
+      "gold_tools": [
+        "qa_text",
+        "search_web"
+      ],
+      "id": "dev_00047",
+      "mapping_type": "one_to_many",
+      "modality": "video",
+      "pred_tool": "summarize_text",
+      "query": "Synthetic query 47 for video (underspecified_tool_goal) [split=dev id=dev_00047]",
+      "retrieved_tools": [
+        "video_caption",
+        "ocr_image",
+        "search_web",
+        "summarize_text"
+      ],
+      "review_note": "one-to-many \u672a\u547d\u4e2d\u4efb\u4e00\u6b63\u786e\u5de5\u5177\uff1b\u9700\u6539\u8fdb\u591a\u6807\u7b7e\u76ee\u6807\u4e0e\u89e3\u7801\u7b56\u7565\u3002",
+      "root_cause": "one_to_many_alignment_gap",
+      "severity": 4.775237888097763,
+      "split": "dev",
+      "tool_status": "newly_added",
+      "unknown_prob": 0.1088545173406601
+    }
+  ],
+  "manual_review_cases_count": 20.0,
+  "num_fail": 46.0,
+  "num_success": 14.0,
+  "num_total": 60.0,
+  "root_cause_counts": {
+    "one_to_many_alignment_gap": 4,
+    "retrieval_miss": 9,
+    "selector_confusion": 14,
+    "unknown_calibration_failure": 19
+  },
+  "success_rate": 0.23333333333333334,
+  "unknown_prob_stats_on_unknown_gold": {
+    "count": 19.0,
+    "max": 0.1527125984430313,
+    "mean": 0.1295500044759951,
+    "min": 0.1113494336605072
+  }
+}

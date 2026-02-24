@@ -1,0 +1,66 @@
+{
+  "distribution": {
+    "ambiguity_type": {
+      "lexical_ambiguity": 12,
+      "missing_constraints": 12,
+      "multimodal_conflict": 12,
+      "underspecified_tool_goal": 12,
+      "version_drift": 12
+    },
+    "gold_tool": {
+      "__unknown__": 37,
+      "ocr_image": 5,
+      "qa_text": 3,
+      "search_web": 9,
+      "transcribe_audio": 6
+    },
+    "modality": {
+      "audio": 15,
+      "image": 15,
+      "text": 15,
+      "video": 15
+    },
+    "tool_status": {
+      "newly_added": 15,
+      "offline": 15,
+      "replaced": 15,
+      "stable": 15
+    }
+  },
+  "input_split": "/root/autodl-tmp/project/data/splits/baseline1_dev_unknown.jsonl",
+  "long_tail": {
+    "gold_tool": {
+      "head_20pct_coverage": 0.6166666666666667,
+      "singleton_ratio": 0.0
+    }
+  },
+  "num_samples": 60,
+  "ratio": {
+    "ambiguity_type": {
+      "lexical_ambiguity": 0.2,
+      "missing_constraints": 0.2,
+      "multimodal_conflict": 0.2,
+      "underspecified_tool_goal": 0.2,
+      "version_drift": 0.2
+    },
+    "gold_tool": {
+      "__unknown__": 0.6166666666666667,
+      "ocr_image": 0.08333333333333333,
+      "qa_text": 0.05,
+      "search_web": 0.15,
+      "transcribe_audio": 0.1
+    },
+    "modality": {
+      "audio": 0.25,
+      "image": 0.25,
+      "text": 0.25,
+      "video": 0.25
+    },
+    "tool_status": {
+      "newly_added": 0.25,
+      "offline": 0.25,
+      "replaced": 0.25,
+      "stable": 0.25
+    }
+  }
+}

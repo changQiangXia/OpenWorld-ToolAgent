@@ -1,0 +1,237 @@
+{
+  "checks": {
+    "duplicate_fingerprints": {
+      "count": 0,
+      "examples": []
+    },
+    "duplicate_ids": {
+      "count": 0,
+      "examples": []
+    },
+    "label_conflicts": {
+      "count": 0,
+      "examples": []
+    },
+    "missing_media_paths": {
+      "count": 0,
+      "examples": []
+    },
+    "schema_errors": {
+      "count": 0,
+      "examples": []
+    },
+    "semantic_errors": {
+      "count": 0,
+      "examples": []
+    }
+  },
+  "generated_at_utc": "2026-02-24T13:11:35.491389+00:00",
+  "inputs": {
+    "dev_file": "/root/autodl-tmp/project/data/splits/dev_v2.jsonl",
+    "schema_file": "/root/autodl-tmp/project/docs/paper/benchmark_v2_row_schema_v1.json",
+    "test_file": "/root/autodl-tmp/project/data/splits/test_v2.jsonl",
+    "train_file": "/root/autodl-tmp/project/data/splits/train_v2.jsonl"
+  },
+  "split_stats": {
+    "dev": {
+      "known_unknown_distribution": {
+        "known": 41,
+        "unknown": 19
+      },
+      "mapping_distribution": {
+        "one_to_many": 9,
+        "one_to_one": 51
+      },
+      "modality_distribution": {
+        "audio": 15,
+        "image": 15,
+        "text": 15,
+        "video": 15
+      },
+      "num_rows": 60,
+      "tool_status_distribution": {
+        "newly_added": 15,
+        "offline": 15,
+        "replaced": 15,
+        "stable": 15
+      },
+      "unknown_ratio": 0.31666666666666665
+    },
+    "test": {
+      "known_unknown_distribution": {
+        "known": 48,
+        "unknown": 12
+      },
+      "mapping_distribution": {
+        "one_to_many": 12,
+        "one_to_one": 48
+      },
+      "modality_distribution": {
+        "audio": 15,
+        "image": 15,
+        "text": 15,
+        "video": 15
+      },
+      "num_rows": 60,
+      "tool_status_distribution": {
+        "newly_added": 15,
+        "offline": 15,
+        "replaced": 15,
+        "stable": 15
+      },
+      "unknown_ratio": 0.2
+    },
+    "train": {
+      "known_unknown_distribution": {
+        "known": 120
+      },
+      "mapping_distribution": {
+        "one_to_many": 28,
+        "one_to_one": 92
+      },
+      "modality_distribution": {
+        "audio": 30,
+        "image": 30,
+        "text": 30,
+        "video": 30
+      },
+      "num_rows": 120,
+      "tool_status_distribution": {
+        "newly_added": 30,
+        "offline": 30,
+        "replaced": 30,
+        "stable": 30
+      },
+      "unknown_ratio": 0.0
+    }
+  },
+  "status": "PASS",
+  "total_error_count": 0,
+  "warnings": {
+    "template_query_rows": {
+      "count": 240,
+      "examples": [
+        {
+          "id": "train_00000",
+          "split": "train"
+        },
+        {
+          "id": "train_00001",
+          "split": "train"
+        },
+        {
+          "id": "train_00002",
+          "split": "train"
+        },
+        {
+          "id": "train_00003",
+          "split": "train"
+        },
+        {
+          "id": "train_00004",
+          "split": "train"
+        },
+        {
+          "id": "train_00005",
+          "split": "train"
+        },
+        {
+          "id": "train_00006",
+          "split": "train"
+        },
+        {
+          "id": "train_00007",
+          "split": "train"
+        },
+        {
+          "id": "train_00008",
+          "split": "train"
+        },
+        {
+          "id": "train_00009",
+          "split": "train"
+        },
+        {
+          "id": "train_00010",
+          "split": "train"
+        },
+        {
+          "id": "train_00011",
+          "split": "train"
+        },
+        {
+          "id": "train_00012",
+          "split": "train"
+        },
+        {
+          "id": "train_00013",
+          "split": "train"
+        },
+        {
+          "id": "train_00014",
+          "split": "train"
+        },
+        {
+          "id": "train_00015",
+          "split": "train"
+        },
+        {
+          "id": "train_00016",
+          "split": "train"
+        },
+        {
+          "id": "train_00017",
+          "split": "train"
+        },
+        {
+          "id": "train_00018",
+          "split": "train"
+        },
+        {
+          "id": "train_00019",
+          "split": "train"
+        },
+        {
+          "id": "train_00020",
+          "split": "train"
+        },
+        {
+          "id": "train_00021",
+          "split": "train"
+        },
+        {
+          "id": "train_00022",
+          "split": "train"
+        },
+        {
+          "id": "train_00023",
+          "split": "train"
+        },
+        {
+          "id": "train_00024",
+          "split": "train"
+        },
+        {
+          "id": "train_00025",
+          "split": "train"
+        },
+        {
+          "id": "train_00026",
+          "split": "train"
+        },
+        {
+          "id": "train_00027",
+          "split": "train"
+        },
+        {
+          "id": "train_00028",
+          "split": "train"
+        },
+        {
+          "id": "train_00029",
+          "split": "train"
+        }
+      ]
+    }
+  }
+}

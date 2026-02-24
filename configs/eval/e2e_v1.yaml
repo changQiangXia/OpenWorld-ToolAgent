@@ -1,0 +1,39 @@
+task_name: open_world_e2e_eval
+model_name: plan_select_execute_recover_v1
+seed: 42
+log_level: INFO
+unknown_token: __unknown__
+
+inputs:
+  split_file: data/splits/test.jsonl
+  prediction_file: outputs/predictions/20260223_open_world_tool_agent_main_v1_mm_openworld_42_test_policy_balanced.jsonl
+  strict_prediction_join: true
+
+selection:
+  complex_only: true
+  min_complex_samples: 50
+  max_samples: 0
+  mapping_types:
+    - one_to_many
+  tool_statuses:
+    - offline
+    - replaced
+    - newly_added
+  ambiguity_types: []
+  include_unknown_gold: true
+
+executor:
+  type: mock
+  timeout_ms: 500.0
+
+recover:
+  max_retries: 2
+  strategy: balanced
+  unknown_threshold: 0.15
+  min_confidence: 0.35
+  fallback_action: clarify
+
+output_dirs:
+  logs: outputs/logs
+  predictions: outputs/predictions
+  reports: outputs/reports

@@ -1,0 +1,111 @@
+{
+  "matrix_config": "/root/autodl-tmp/project/configs/eval/week06_matrix.yaml",
+  "notes": [
+    "do not run long jobs automatically",
+    "run in sequence and aggregate metrics to outputs/reports/main_v1_week06_matrix_summary.json"
+  ],
+  "num_runs": 9,
+  "objective": "main_v1 first-round results + error analysis",
+  "runs": [
+    {
+      "eval_commands": [
+        "bash scripts/eval/eval_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1_small.yaml --split-name dev",
+        "bash scripts/eval/eval_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1_small.yaml --split-name test"
+      ],
+      "model": "small",
+      "run_id": "small_seed42",
+      "seed": 42,
+      "train_command": "bash scripts/train/run_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1_small.yaml --seed 42",
+      "train_config": "configs/train/main_v1_small.yaml"
+    },
+    {
+      "eval_commands": [
+        "bash scripts/eval/eval_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1_small.yaml --split-name dev",
+        "bash scripts/eval/eval_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1_small.yaml --split-name test"
+      ],
+      "model": "small",
+      "run_id": "small_seed43",
+      "seed": 43,
+      "train_command": "bash scripts/train/run_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1_small.yaml --seed 43",
+      "train_config": "configs/train/main_v1_small.yaml"
+    },
+    {
+      "eval_commands": [
+        "bash scripts/eval/eval_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1_small.yaml --split-name dev",
+        "bash scripts/eval/eval_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1_small.yaml --split-name test"
+      ],
+      "model": "small",
+      "run_id": "small_seed44",
+      "seed": 44,
+      "train_command": "bash scripts/train/run_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1_small.yaml --seed 44",
+      "train_config": "configs/train/main_v1_small.yaml"
+    },
+    {
+      "eval_commands": [
+        "bash scripts/eval/eval_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1.yaml --split-name dev",
+        "bash scripts/eval/eval_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1.yaml --split-name test"
+      ],
+      "model": "base",
+      "run_id": "base_seed42",
+      "seed": 42,
+      "train_command": "bash scripts/train/run_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1.yaml --seed 42",
+      "train_config": "configs/train/main_v1.yaml"
+    },
+    {
+      "eval_commands": [
+        "bash scripts/eval/eval_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1.yaml --split-name dev",
+        "bash scripts/eval/eval_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1.yaml --split-name test"
+      ],
+      "model": "base",
+      "run_id": "base_seed43",
+      "seed": 43,
+      "train_command": "bash scripts/train/run_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1.yaml --seed 43",
+      "train_config": "configs/train/main_v1.yaml"
+    },
+    {
+      "eval_commands": [
+        "bash scripts/eval/eval_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1.yaml --split-name dev",
+        "bash scripts/eval/eval_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1.yaml --split-name test"
+      ],
+      "model": "base",
+      "run_id": "base_seed44",
+      "seed": 44,
+      "train_command": "bash scripts/train/run_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1.yaml --seed 44",
+      "train_config": "configs/train/main_v1.yaml"
+    },
+    {
+      "eval_commands": [
+        "bash scripts/eval/eval_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1_large.yaml --split-name dev",
+        "bash scripts/eval/eval_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1_large.yaml --split-name test"
+      ],
+      "model": "large",
+      "run_id": "large_seed42",
+      "seed": 42,
+      "train_command": "bash scripts/train/run_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1_large.yaml --seed 42",
+      "train_config": "configs/train/main_v1_large.yaml"
+    },
+    {
+      "eval_commands": [
+        "bash scripts/eval/eval_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1_large.yaml --split-name dev",
+        "bash scripts/eval/eval_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1_large.yaml --split-name test"
+      ],
+      "model": "large",
+      "run_id": "large_seed43",
+      "seed": 43,
+      "train_command": "bash scripts/train/run_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1_large.yaml --seed 43",
+      "train_config": "configs/train/main_v1_large.yaml"
+    },
+    {
+      "eval_commands": [
+        "bash scripts/eval/eval_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1_large.yaml --split-name dev",
+        "bash scripts/eval/eval_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1_large.yaml --split-name test"
+      ],
+      "model": "large",
+      "run_id": "large_seed44",
+      "seed": 44,
+      "train_command": "bash scripts/train/run_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1_large.yaml --seed 44",
+      "train_config": "configs/train/main_v1_large.yaml"
+    }
+  ],
+  "week": 6
+}

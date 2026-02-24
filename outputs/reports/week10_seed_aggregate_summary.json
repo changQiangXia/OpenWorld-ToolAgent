@@ -1,0 +1,1378 @@
+{
+  "anomalies": {
+    "anomaly_jsonl": "/root/autodl-tmp/project/outputs/reports/week10_seed_anomalies.jsonl",
+    "e2e_disagreements_top20": [
+      {
+        "anomaly_score": 4.0,
+        "failure_code_by_seed": {
+          "42": "E_POLICY_CLARIFY",
+          "43": "OK",
+          "44": "OK"
+        },
+        "failure_code_variety": 2.0,
+        "final_action_by_seed": {
+          "42": "clarify",
+          "43": "success",
+          "44": "success"
+        },
+        "id": "test_00019",
+        "mixed_success": true,
+        "num_fail": 2.0,
+        "num_success": 1.0,
+        "query": "Synthetic query 19 for video (version_drift) [split=test id=test_00019]",
+        "success_by_seed": {
+          "42": true,
+          "43": false,
+          "44": false
+        }
+      },
+      {
+        "anomaly_score": 4.0,
+        "failure_code_by_seed": {
+          "42": "OK",
+          "43": "E_POLICY_REJECT",
+          "44": "OK"
+        },
+        "failure_code_variety": 2.0,
+        "final_action_by_seed": {
+          "42": "success",
+          "43": "reject",
+          "44": "success"
+        },
+        "id": "test_00043",
+        "mixed_success": true,
+        "num_fail": 2.0,
+        "num_success": 1.0,
+        "query": "Synthetic query 43 for video (multimodal_conflict) [split=test id=test_00043]",
+        "success_by_seed": {
+          "42": true,
+          "43": false,
+          "44": false
+        }
+      },
+      {
+        "anomaly_score": 4.0,
+        "failure_code_by_seed": {
+          "42": "OK",
+          "43": "E_POLICY_REJECT",
+          "44": "E_POLICY_REJECT"
+        },
+        "failure_code_variety": 2.0,
+        "final_action_by_seed": {
+          "42": "success",
+          "43": "reject",
+          "44": "reject"
+        },
+        "id": "test_00051",
+        "mixed_success": true,
+        "num_fail": 2.0,
+        "num_success": 1.0,
+        "query": "Synthetic query 51 for video (missing_constraints) [split=test id=test_00051]",
+        "success_by_seed": {
+          "42": true,
+          "43": false,
+          "44": false
+        }
+      },
+      {
+        "anomaly_score": 4.0,
+        "failure_code_by_seed": {
+          "42": "OK",
+          "43": "E_POLICY_CLARIFY",
+          "44": "OK"
+        },
+        "failure_code_variety": 2.0,
+        "final_action_by_seed": {
+          "42": "success",
+          "43": "clarify",
+          "44": "success"
+        },
+        "id": "test_00008",
+        "mixed_success": true,
+        "num_fail": 1.0,
+        "num_success": 2.0,
+        "query": "Synthetic query 8 for text (multimodal_conflict) [split=test id=test_00008]",
+        "success_by_seed": {
+          "42": true,
+          "43": false,
+          "44": true
+        }
+      },
+      {
+        "anomaly_score": 4.0,
+        "failure_code_by_seed": {
+          "42": "OK",
+          "43": "E_POLICY_REJECT",
+          "44": "OK"
+        },
+        "failure_code_variety": 2.0,
+        "final_action_by_seed": {
+          "42": "success",
+          "43": "reject",
+          "44": "success"
+        },
+        "id": "test_00022",
+        "mixed_success": true,
+        "num_fail": 1.0,
+        "num_success": 2.0,
+        "query": "Synthetic query 22 for audio (underspecified_tool_goal) [split=test id=test_00022]",
+        "success_by_seed": {
+          "42": true,
+          "43": false,
+          "44": true
+        }
+      },
+      {
+        "anomaly_score": 4.0,
+        "failure_code_by_seed": {
+          "42": "E_POLICY_CLARIFY",
+          "43": "OK",
+          "44": "OK"
+        },
+        "failure_code_variety": 2.0,
+        "final_action_by_seed": {
+          "42": "clarify",
+          "43": "success",
+          "44": "success"
+        },
+        "id": "test_00046",
+        "mixed_success": true,
+        "num_fail": 1.0,
+        "num_success": 2.0,
+        "query": "Synthetic query 46 for audio (missing_constraints) [split=test id=test_00046]",
+        "success_by_seed": {
+          "42": false,
+          "43": true,
+          "44": true
+        }
+      },
+      {
+        "anomaly_score": 4.0,
+        "failure_code_by_seed": {
+          "42": "OK",
+          "43": "E_POLICY_CLARIFY",
+          "44": "OK"
+        },
+        "failure_code_variety": 2.0,
+        "final_action_by_seed": {
+          "42": "success",
+          "43": "clarify",
+          "44": "success"
+        },
+        "id": "test_00059",
+        "mixed_success": true,
+        "num_fail": 1.0,
+        "num_success": 2.0,
+        "query": "Synthetic query 59 for video (version_drift) [split=test id=test_00059]",
+        "success_by_seed": {
+          "42": true,
+          "43": false,
+          "44": true
+        }
+      },
+      {
+        "anomaly_score": 3.0,
+        "failure_code_by_seed": {
+          "42": "OK",
+          "43": "OK",
+          "44": "OK"
+        },
+        "failure_code_variety": 1.0,
+        "final_action_by_seed": {
+          "42": "success",
+          "43": "success",
+          "44": "success"
+        },
+        "id": "test_00016",
+        "mixed_success": true,
+        "num_fail": 1.0,
+        "num_success": 2.0,
+        "query": "Synthetic query 16 for text (missing_constraints) [split=test id=test_00016]",
+        "success_by_seed": {
+          "42": false,
+          "43": true,
+          "44": true
+        }
+      },
+      {
+        "anomaly_score": 2.0,
+        "failure_code_by_seed": {
+          "42": "E_POLICY_CLARIFY",
+          "43": "E_POLICY_REJECT",
+          "44": "E_POLICY_CLARIFY"
+        },
+        "failure_code_variety": 2.0,
+        "final_action_by_seed": {
+          "42": "clarify",
+          "43": "reject",
+          "44": "clarify"
+        },
+        "id": "test_00006",
+        "mixed_success": false,
+        "num_fail": 3.0,
+        "num_success": 0.0,
+        "query": "Synthetic query 6 for audio (missing_constraints) [split=test id=test_00006]",
+        "success_by_seed": {
+          "42": false,
+          "43": false,
+          "44": false
+        }
+      },
+      {
+        "anomaly_score": 2.0,
+        "failure_code_by_seed": {
+          "42": "E_POLICY_CLARIFY",
+          "43": "E_POLICY_REJECT",
+          "44": "E_POLICY_CLARIFY"
+        },
+        "failure_code_variety": 2.0,
+        "final_action_by_seed": {
+          "42": "clarify",
+          "43": "reject",
+          "44": "clarify"
+        },
+        "id": "test_00011",
+        "mixed_success": false,
+        "num_fail": 3.0,
+        "num_success": 0.0,
+        "query": "Synthetic query 11 for video (missing_constraints) [split=test id=test_00011]",
+        "success_by_seed": {
+          "42": false,
+          "43": false,
+          "44": false
+        }
+      },
+      {
+        "anomaly_score": 2.0,
+        "failure_code_by_seed": {
+          "42": "E_POLICY_CLARIFY",
+          "43": "E_POLICY_REJECT",
+          "44": "E_POLICY_CLARIFY"
+        },
+        "failure_code_variety": 2.0,
+        "final_action_by_seed": {
+          "42": "clarify",
+          "43": "reject",
+          "44": "clarify"
+        },
+        "id": "test_00013",
+        "mixed_success": false,
+        "num_fail": 3.0,
+        "num_success": 0.0,
+        "query": "Synthetic query 13 for image (multimodal_conflict) [split=test id=test_00013]",
+        "success_by_seed": {
+          "42": false,
+          "43": false,
+          "44": false
+        }
+      },
+      {
+        "anomaly_score": 2.0,
+        "failure_code_by_seed": {
+          "42": "E_POLICY_CLARIFY",
+          "43": "E_POLICY_CLARIFY",
+          "44": "E_POLICY_REJECT"
+        },
+        "failure_code_variety": 2.0,
+        "final_action_by_seed": {
+          "42": "clarify",
+          "43": "clarify",
+          "44": "reject"
+        },
+        "id": "test_00015",
+        "mixed_success": false,
+        "num_fail": 3.0,
+        "num_success": 0.0,
+        "query": "Synthetic query 15 for video (lexical_ambiguity) [split=test id=test_00015]",
+        "success_by_seed": {
+          "42": false,
+          "43": false,
+          "44": false
+        }
+      },
+      {
+        "anomaly_score": 2.0,
+        "failure_code_by_seed": {
+          "42": "E_POLICY_REJECT",
+          "43": "E_POLICY_REJECT",
+          "44": "E_POLICY_CLARIFY"
+        },
+        "failure_code_variety": 2.0,
+        "final_action_by_seed": {
+          "42": "reject",
+          "43": "reject",
+          "44": "clarify"
+        },
+        "id": "test_00017",
+        "mixed_success": false,
+        "num_fail": 3.0,
+        "num_success": 0.0,
+        "query": "Synthetic query 17 for image (underspecified_tool_goal) [split=test id=test_00017]",
+        "success_by_seed": {
+          "42": false,
+          "43": false,
+          "44": false
+        }
+      },
+      {
+        "anomaly_score": 2.0,
+        "failure_code_by_seed": {
+          "42": "E_POLICY_REJECT",
+          "43": "E_POLICY_CLARIFY",
+          "44": "E_POLICY_REJECT"
+        },
+        "failure_code_variety": 2.0,
+        "final_action_by_seed": {
+          "42": "reject",
+          "43": "clarify",
+          "44": "reject"
+        },
+        "id": "test_00025",
+        "mixed_success": false,
+        "num_fail": 3.0,
+        "num_success": 0.0,
+        "query": "Synthetic query 25 for image (lexical_ambiguity) [split=test id=test_00025]",
+        "success_by_seed": {
+          "42": false,
+          "43": false,
+          "44": false
+        }
+      },
+      {
+        "anomaly_score": 2.0,
+        "failure_code_by_seed": {
+          "42": "E_POLICY_REJECT",
+          "43": "E_POLICY_CLARIFY",
+          "44": "E_POLICY_CLARIFY"
+        },
+        "failure_code_variety": 2.0,
+        "final_action_by_seed": {
+          "42": "reject",
+          "43": "clarify",
+          "44": "clarify"
+        },
+        "id": "test_00029",
+        "mixed_success": false,
+        "num_fail": 3.0,
+        "num_success": 0.0,
+        "query": "Synthetic query 29 for image (version_drift) [split=test id=test_00029]",
+        "success_by_seed": {
+          "42": false,
+          "43": false,
+          "44": false
+        }
+      },
+      {
+        "anomaly_score": 2.0,
+        "failure_code_by_seed": {
+          "42": "E_POLICY_REJECT",
+          "43": "E_POLICY_REJECT",
+          "44": "E_POLICY_CLARIFY"
+        },
+        "failure_code_variety": 2.0,
+        "final_action_by_seed": {
+          "42": "reject",
+          "43": "reject",
+          "44": "clarify"
+        },
+        "id": "test_00041",
+        "mixed_success": false,
+        "num_fail": 3.0,
+        "num_success": 0.0,
+        "query": "Synthetic query 41 for image (missing_constraints) [split=test id=test_00041]",
+        "success_by_seed": {
+          "42": false,
+          "43": false,
+          "44": false
+        }
+      },
+      {
+        "anomaly_score": 2.0,
+        "failure_code_by_seed": {
+          "42": "E_POLICY_CLARIFY",
+          "43": "E_POLICY_REJECT",
+          "44": "E_POLICY_CLARIFY"
+        },
+        "failure_code_variety": 2.0,
+        "final_action_by_seed": {
+          "42": "clarify",
+          "43": "reject",
+          "44": "clarify"
+        },
+        "id": "test_00042",
+        "mixed_success": false,
+        "num_fail": 3.0,
+        "num_success": 0.0,
+        "query": "Synthetic query 42 for audio (underspecified_tool_goal) [split=test id=test_00042]",
+        "success_by_seed": {
+          "42": false,
+          "43": false,
+          "44": false
+        }
+      },
+      {
+        "anomaly_score": 2.0,
+        "failure_code_by_seed": {
+          "42": "E_POLICY_REJECT",
+          "43": "E_POLICY_CLARIFY",
+          "44": "E_POLICY_CLARIFY"
+        },
+        "failure_code_variety": 2.0,
+        "final_action_by_seed": {
+          "42": "reject",
+          "43": "clarify",
+          "44": "clarify"
+        },
+        "id": "test_00045",
+        "mixed_success": false,
+        "num_fail": 3.0,
+        "num_success": 0.0,
+        "query": "Synthetic query 45 for image (lexical_ambiguity) [split=test id=test_00045]",
+        "success_by_seed": {
+          "42": false,
+          "43": false,
+          "44": false
+        }
+      },
+      {
+        "anomaly_score": 2.0,
+        "failure_code_by_seed": {
+          "42": "OK",
+          "43": "E_POLICY_CLARIFY",
+          "44": "E_POLICY_CLARIFY"
+        },
+        "failure_code_variety": 2.0,
+        "final_action_by_seed": {
+          "42": "success",
+          "43": "clarify",
+          "44": "clarify"
+        },
+        "id": "test_00047",
+        "mixed_success": false,
+        "num_fail": 3.0,
+        "num_success": 0.0,
+        "query": "Synthetic query 47 for video (underspecified_tool_goal) [split=test id=test_00047]",
+        "success_by_seed": {
+          "42": false,
+          "43": false,
+          "44": false
+        }
+      },
+      {
+        "anomaly_score": 2.0,
+        "failure_code_by_seed": {
+          "42": "E_POLICY_REJECT",
+          "43": "E_POLICY_CLARIFY",
+          "44": "E_POLICY_CLARIFY"
+        },
+        "failure_code_variety": 2.0,
+        "final_action_by_seed": {
+          "42": "reject",
+          "43": "clarify",
+          "44": "clarify"
+        },
+        "id": "test_00049",
+        "mixed_success": false,
+        "num_fail": 3.0,
+        "num_success": 0.0,
+        "query": "Synthetic query 49 for image (version_drift) [split=test id=test_00049]",
+        "success_by_seed": {
+          "42": false,
+          "43": false,
+          "44": false
+        }
+      }
+    ],
+    "prediction_disagreements_top20": [
+      {
+        "anomaly_score": 5.0,
+        "gold_tools": [
+          "ocr_image"
+        ],
+        "id": "test_00002",
+        "is_unknown_gold": false,
+        "mixed_success": true,
+        "num_fail": 2.0,
+        "num_success": 1.0,
+        "pred_tool_by_seed": {
+          "42": "search_web",
+          "43": "ocr_image",
+          "44": "__unknown__"
+        },
+        "pred_tool_variety": 3.0,
+        "query": "Synthetic query 2 for audio (underspecified_tool_goal) [split=test id=test_00002]",
+        "success_by_seed": {
+          "42": false,
+          "43": true,
+          "44": false
+        }
+      },
+      {
+        "anomaly_score": 5.0,
+        "gold_tools": [
+          "transcribe_audio"
+        ],
+        "id": "test_00004",
+        "is_unknown_gold": false,
+        "mixed_success": true,
+        "num_fail": 2.0,
+        "num_success": 1.0,
+        "pred_tool_by_seed": {
+          "42": "__unknown__",
+          "43": "transcribe_audio",
+          "44": "ocr_image"
+        },
+        "pred_tool_variety": 3.0,
+        "query": "Synthetic query 4 for text (version_drift) [split=test id=test_00004]",
+        "success_by_seed": {
+          "42": false,
+          "43": true,
+          "44": false
+        }
+      },
+      {
+        "anomaly_score": 5.0,
+        "gold_tools": [
+          "search_web",
+          "summarize_text"
+        ],
+        "id": "test_00008",
+        "is_unknown_gold": false,
+        "mixed_success": true,
+        "num_fail": 2.0,
+        "num_success": 1.0,
+        "pred_tool_by_seed": {
+          "42": "search_web",
+          "43": "transcribe_audio",
+          "44": "__unknown__"
+        },
+        "pred_tool_variety": 3.0,
+        "query": "Synthetic query 8 for text (multimodal_conflict) [split=test id=test_00008]",
+        "success_by_seed": {
+          "42": true,
+          "43": false,
+          "44": false
+        }
+      },
+      {
+        "anomaly_score": 5.0,
+        "gold_tools": [
+          "ocr_image",
+          "qa_text"
+        ],
+        "id": "test_00016",
+        "is_unknown_gold": false,
+        "mixed_success": true,
+        "num_fail": 2.0,
+        "num_success": 1.0,
+        "pred_tool_by_seed": {
+          "42": "transcribe_audio",
+          "43": "__unknown__",
+          "44": "ocr_image"
+        },
+        "pred_tool_variety": 3.0,
+        "query": "Synthetic query 16 for text (missing_constraints) [split=test id=test_00016]",
+        "success_by_seed": {
+          "42": false,
+          "43": false,
+          "44": true
+        }
+      },
+      {
+        "anomaly_score": 5.0,
+        "gold_tools": [
+          "search_web"
+        ],
+        "id": "test_00018",
+        "is_unknown_gold": false,
+        "mixed_success": true,
+        "num_fail": 2.0,
+        "num_success": 1.0,
+        "pred_tool_by_seed": {
+          "42": "search_web",
+          "43": "ocr_image",
+          "44": "__unknown__"
+        },
+        "pred_tool_variety": 3.0,
+        "query": "Synthetic query 18 for audio (multimodal_conflict) [split=test id=test_00018]",
+        "success_by_seed": {
+          "42": true,
+          "43": false,
+          "44": false
+        }
+      },
+      {
+        "anomaly_score": 5.0,
+        "gold_tools": [
+          "transcribe_audio"
+        ],
+        "id": "test_00049",
+        "is_unknown_gold": false,
+        "mixed_success": true,
+        "num_fail": 2.0,
+        "num_success": 1.0,
+        "pred_tool_by_seed": {
+          "42": "__unknown__",
+          "43": "transcribe_audio",
+          "44": "ocr_image"
+        },
+        "pred_tool_variety": 3.0,
+        "query": "Synthetic query 49 for image (version_drift) [split=test id=test_00049]",
+        "success_by_seed": {
+          "42": false,
+          "43": true,
+          "44": false
+        }
+      },
+      {
+        "anomaly_score": 5.0,
+        "gold_tools": [
+          "__unknown__"
+        ],
+        "id": "test_00056",
+        "is_unknown_gold": true,
+        "mixed_success": true,
+        "num_fail": 2.0,
+        "num_success": 1.0,
+        "pred_tool_by_seed": {
+          "42": "transcribe_audio",
+          "43": "__unknown__",
+          "44": "ocr_image"
+        },
+        "pred_tool_variety": 3.0,
+        "query": "Synthetic query 56 for text (missing_constraints) [split=test id=test_00056]",
+        "success_by_seed": {
+          "42": false,
+          "43": true,
+          "44": false
+        }
+      },
+      {
+        "anomaly_score": 5.0,
+        "gold_tools": [
+          "search_web"
+        ],
+        "id": "test_00059",
+        "is_unknown_gold": false,
+        "mixed_success": true,
+        "num_fail": 2.0,
+        "num_success": 1.0,
+        "pred_tool_by_seed": {
+          "42": "search_web",
+          "43": "transcribe_audio",
+          "44": "__unknown__"
+        },
+        "pred_tool_variety": 3.0,
+        "query": "Synthetic query 59 for video (version_drift) [split=test id=test_00059]",
+        "success_by_seed": {
+          "42": true,
+          "43": false,
+          "44": false
+        }
+      },
+      {
+        "anomaly_score": 4.0,
+        "gold_tools": [
+          "search_web",
+          "transcribe_audio"
+        ],
+        "id": "test_00000",
+        "is_unknown_gold": false,
+        "mixed_success": true,
+        "num_fail": 2.0,
+        "num_success": 1.0,
+        "pred_tool_by_seed": {
+          "42": "transcribe_audio",
+          "43": "__unknown__",
+          "44": "__unknown__"
+        },
+        "pred_tool_variety": 2.0,
+        "query": "Synthetic query 0 for text (lexical_ambiguity) [split=test id=test_00000]",
+        "success_by_seed": {
+          "42": true,
+          "43": false,
+          "44": false
+        }
+      },
+      {
+        "anomaly_score": 4.0,
+        "gold_tools": [
+          "__unknown__"
+        ],
+        "id": "test_00001",
+        "is_unknown_gold": true,
+        "mixed_success": true,
+        "num_fail": 2.0,
+        "num_success": 1.0,
+        "pred_tool_by_seed": {
+          "42": "transcribe_audio",
+          "43": "transcribe_audio",
+          "44": "__unknown__"
+        },
+        "pred_tool_variety": 2.0,
+        "query": "Synthetic query 1 for image (missing_constraints) [split=test id=test_00001]",
+        "success_by_seed": {
+          "42": false,
+          "43": false,
+          "44": true
+        }
+      },
+      {
+        "anomaly_score": 4.0,
+        "gold_tools": [
+          "__unknown__"
+        ],
+        "id": "test_00003",
+        "is_unknown_gold": true,
+        "mixed_success": true,
+        "num_fail": 2.0,
+        "num_success": 1.0,
+        "pred_tool_by_seed": {
+          "42": "__unknown__",
+          "43": "transcribe_audio",
+          "44": "transcribe_audio"
+        },
+        "pred_tool_variety": 2.0,
+        "query": "Synthetic query 3 for video (multimodal_conflict) [split=test id=test_00003]",
+        "success_by_seed": {
+          "42": true,
+          "43": false,
+          "44": false
+        }
+      },
+      {
+        "anomaly_score": 4.0,
+        "gold_tools": [
+          "search_web"
+        ],
+        "id": "test_00009",
+        "is_unknown_gold": false,
+        "mixed_success": true,
+        "num_fail": 2.0,
+        "num_success": 1.0,
+        "pred_tool_by_seed": {
+          "42": "search_web",
+          "43": "ocr_image",
+          "44": "ocr_image"
+        },
+        "pred_tool_variety": 2.0,
+        "query": "Synthetic query 9 for image (version_drift) [split=test id=test_00009]",
+        "success_by_seed": {
+          "42": true,
+          "43": false,
+          "44": false
+        }
+      },
+      {
+        "anomaly_score": 4.0,
+        "gold_tools": [
+          "search_web"
+        ],
+        "id": "test_00014",
+        "is_unknown_gold": false,
+        "mixed_success": true,
+        "num_fail": 2.0,
+        "num_success": 1.0,
+        "pred_tool_by_seed": {
+          "42": "search_web",
+          "43": "ocr_image",
+          "44": "ocr_image"
+        },
+        "pred_tool_variety": 2.0,
+        "query": "Synthetic query 14 for audio (version_drift) [split=test id=test_00014]",
+        "success_by_seed": {
+          "42": true,
+          "43": false,
+          "44": false
+        }
+      },
+      {
+        "anomaly_score": 4.0,
+        "gold_tools": [
+          "search_web"
+        ],
+        "id": "test_00023",
+        "is_unknown_gold": false,
+        "mixed_success": true,
+        "num_fail": 2.0,
+        "num_success": 1.0,
+        "pred_tool_by_seed": {
+          "42": "search_web",
+          "43": "__unknown__",
+          "44": "__unknown__"
+        },
+        "pred_tool_variety": 2.0,
+        "query": "Synthetic query 23 for video (multimodal_conflict) [split=test id=test_00023]",
+        "success_by_seed": {
+          "42": true,
+          "43": false,
+          "44": false
+        }
+      },
+      {
+        "anomaly_score": 4.0,
+        "gold_tools": [
+          "ocr_image",
+          "search_web"
+        ],
+        "id": "test_00030",
+        "is_unknown_gold": false,
+        "mixed_success": true,
+        "num_fail": 2.0,
+        "num_success": 1.0,
+        "pred_tool_by_seed": {
+          "42": "ocr_image",
+          "43": "__unknown__",
+          "44": "__unknown__"
+        },
+        "pred_tool_variety": 2.0,
+        "query": "Synthetic query 30 for audio (lexical_ambiguity) [split=test id=test_00030]",
+        "success_by_seed": {
+          "42": true,
+          "43": false,
+          "44": false
+        }
+      },
+      {
+        "anomaly_score": 4.0,
+        "gold_tools": [
+          "transcribe_audio"
+        ],
+        "id": "test_00032",
+        "is_unknown_gold": false,
+        "mixed_success": true,
+        "num_fail": 2.0,
+        "num_success": 1.0,
+        "pred_tool_by_seed": {
+          "42": "transcribe_audio",
+          "43": "__unknown__",
+          "44": "__unknown__"
+        },
+        "pred_tool_variety": 2.0,
+        "query": "Synthetic query 32 for text (underspecified_tool_goal) [split=test id=test_00032]",
+        "success_by_seed": {
+          "42": true,
+          "43": false,
+          "44": false
+        }
+      },
+      {
+        "anomaly_score": 4.0,
+        "gold_tools": [
+          "__unknown__"
+        ],
+        "id": "test_00050",
+        "is_unknown_gold": true,
+        "mixed_success": true,
+        "num_fail": 2.0,
+        "num_success": 1.0,
+        "pred_tool_by_seed": {
+          "42": "__unknown__",
+          "43": "search_web",
+          "44": "search_web"
+        },
+        "pred_tool_variety": 2.0,
+        "query": "Synthetic query 50 for audio (lexical_ambiguity) [split=test id=test_00050]",
+        "success_by_seed": {
+          "42": true,
+          "43": false,
+          "44": false
+        }
+      },
+      {
+        "anomaly_score": 4.0,
+        "gold_tools": [
+          "__unknown__"
+        ],
+        "id": "test_00052",
+        "is_unknown_gold": true,
+        "mixed_success": true,
+        "num_fail": 2.0,
+        "num_success": 1.0,
+        "pred_tool_by_seed": {
+          "42": "ocr_image",
+          "43": "__unknown__",
+          "44": "ocr_image"
+        },
+        "pred_tool_variety": 2.0,
+        "query": "Synthetic query 52 for text (underspecified_tool_goal) [split=test id=test_00052]",
+        "success_by_seed": {
+          "42": false,
+          "43": true,
+          "44": false
+        }
+      },
+      {
+        "anomaly_score": 4.0,
+        "gold_tools": [
+          "__unknown__"
+        ],
+        "id": "test_00007",
+        "is_unknown_gold": true,
+        "mixed_success": true,
+        "num_fail": 1.0,
+        "num_success": 2.0,
+        "pred_tool_by_seed": {
+          "42": "__unknown__",
+          "43": "ocr_image",
+          "44": "__unknown__"
+        },
+        "pred_tool_variety": 2.0,
+        "query": "Synthetic query 7 for video (underspecified_tool_goal) [split=test id=test_00007]",
+        "success_by_seed": {
+          "42": true,
+          "43": false,
+          "44": true
+        }
+      },
+      {
+        "anomaly_score": 4.0,
+        "gold_tools": [
+          "ocr_image",
+          "qa_text"
+        ],
+        "id": "test_00013",
+        "is_unknown_gold": false,
+        "mixed_success": true,
+        "num_fail": 1.0,
+        "num_success": 2.0,
+        "pred_tool_by_seed": {
+          "42": "ocr_image",
+          "43": "__unknown__",
+          "44": "ocr_image"
+        },
+        "pred_tool_variety": 2.0,
+        "query": "Synthetic query 13 for image (multimodal_conflict) [split=test id=test_00013]",
+        "success_by_seed": {
+          "42": true,
+          "43": false,
+          "44": true
+        }
+      }
+    ]
+  },
+  "claims": [
+    {
+      "claim_id": "C1",
+      "delta_ci95_high": 0.3122717135236005,
+      "delta_ci95_low": 0.287262002401794,
+      "delta_mean": 0.29976685796269725,
+      "delta_std": 0.011050533251425841,
+      "description": "Week07 balanced policy improves unknown_detection_f1 on test split.",
+      "expected_direction": "positive",
+      "is_direction_consistent": true,
+      "num_seeds": 3.0,
+      "per_seed_delta": {
+        "42": 0.3125,
+        "43": 0.29411764705882354,
+        "44": 0.2926829268292683
+      }
+    },
+    {
+      "claim_id": "C2",
+      "delta_ci95_high": -0.15048434360473978,
+      "delta_ci95_low": -0.27173787861748244,
+      "delta_mean": -0.2111111111111111,
+      "delta_std": 0.05357583756107196,
+      "description": "Week07 balanced policy reduces hallucination_rate on test split.",
+      "expected_direction": "negative",
+      "is_direction_consistent": true,
+      "num_seeds": 3.0,
+      "per_seed_delta": {
+        "42": -0.23333333333333334,
+        "43": -0.15000000000000002,
+        "44": -0.25
+      }
+    },
+    {
+      "claim_id": "C3",
+      "delta_ci95_high": 0.24988364334688107,
+      "delta_ci95_low": 0.13473174126850357,
+      "delta_mean": 0.19230769230769232,
+      "delta_std": 0.050879832905088275,
+      "description": "Week09 ablation shows recover module improves E2E success.",
+      "expected_direction": "positive",
+      "is_direction_consistent": true,
+      "num_seeds": 3.0,
+      "per_seed_delta": {
+        "42": 0.21153846153846156,
+        "43": 0.13461538461538464,
+        "44": 0.23076923076923078
+      }
+    },
+    {
+      "claim_id": "C4",
+      "delta_ci95_high": -0.2507692307692308,
+      "delta_ci95_low": -0.3261538461538462,
+      "delta_mean": -0.2884615384615385,
+      "delta_std": 0.033308669376324575,
+      "description": "Week09 robustness shows offline perturbation degrades E2E success.",
+      "expected_direction": "negative",
+      "is_direction_consistent": true,
+      "num_seeds": 3.0,
+      "per_seed_delta": {
+        "42": -0.3076923076923077,
+        "43": -0.25,
+        "44": -0.3076923076923077
+      }
+    },
+    {
+      "claim_id": "C5",
+      "delta_ci95_high": 0.0,
+      "delta_ci95_low": 0.0,
+      "delta_mean": 0.0,
+      "delta_std": 0.0,
+      "description": "Week08 E2E keeps failure_with_code_rate at 1.0.",
+      "expected_direction": "non_negative",
+      "is_direction_consistent": true,
+      "num_seeds": 3.0,
+      "per_seed_delta": {
+        "42": 0.0,
+        "43": 0.0,
+        "44": 0.0
+      }
+    }
+  ],
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "settings": [
+    {
+      "avg_latency_ms_ci95_high": 0.34675712727910074,
+      "avg_latency_ms_ci95_low": 0.32758767892845014,
+      "avg_latency_ms_mean": 0.33717240310377544,
+      "avg_latency_ms_std": 0.008470014922549564,
+      "end_to_end_success_rate_ci95_high": 0.2688601087935278,
+      "end_to_end_success_rate_ci95_low": 0.23113989120647221,
+      "end_to_end_success_rate_mean": 0.25,
+      "end_to_end_success_rate_std": 0.016666666666666663,
+      "hallucination_rate_ci95_high": 0.5688601087935278,
+      "hallucination_rate_ci95_low": 0.5311398912064723,
+      "hallucination_rate_mean": 0.55,
+      "hallucination_rate_std": 0.016666666666666663,
+      "num_seeds": 3.0,
+      "section": "week06",
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "setting": "main_v1_base_test_before_policy",
+      "source_files": [
+        "/root/autodl-tmp/project/outputs/reports/20260223_open_world_tool_agent_main_v1_mm_openworld_42_test_eval.json",
+        "/root/autodl-tmp/project/outputs/reports/20260223_open_world_tool_agent_main_v1_mm_openworld_43_test_eval.json",
+        "/root/autodl-tmp/project/outputs/reports/20260223_open_world_tool_agent_main_v1_mm_openworld_44_test_eval.json"
+      ],
+      "split": "test",
+      "tool_selection_accuracy_ci95_high": 0.3360751359919097,
+      "tool_selection_accuracy_ci95_low": 0.2889248640080903,
+      "tool_selection_accuracy_mean": 0.3125,
+      "tool_selection_accuracy_std": 0.020833333333333315,
+      "unknown_detection_f1_ci95_high": 0.0,
+      "unknown_detection_f1_ci95_low": 0.0,
+      "unknown_detection_f1_mean": 0.0,
+      "unknown_detection_f1_std": 0.0
+    },
+    {
+      "avg_latency_ms_ci95_high": 0.34675712727910074,
+      "avg_latency_ms_ci95_low": 0.32758767892845014,
+      "avg_latency_ms_mean": 0.33717240310377544,
+      "avg_latency_ms_std": 0.008470014922549564,
+      "end_to_end_success_rate_ci95_high": 0.2688601087935278,
+      "end_to_end_success_rate_ci95_low": 0.23113989120647221,
+      "end_to_end_success_rate_mean": 0.25,
+      "end_to_end_success_rate_std": 0.016666666666666663,
+      "hallucination_rate_ci95_high": 0.5688601087935278,
+      "hallucination_rate_ci95_low": 0.5311398912064723,
+      "hallucination_rate_mean": 0.55,
+      "hallucination_rate_std": 0.016666666666666663,
+      "num_seeds": 3.0,
+      "section": "week07",
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "setting": "balanced_policy_test_before",
+      "source_files": [
+        "/root/autodl-tmp/project/outputs/reports/open_world_compare_balanced_seed42.json",
+        "/root/autodl-tmp/project/outputs/reports/open_world_compare_balanced_seed43.json",
+        "/root/autodl-tmp/project/outputs/reports/open_world_compare_balanced_seed44.json"
+      ],
+      "split": "test",
+      "tool_selection_accuracy_ci95_high": 0.3360751359919097,
+      "tool_selection_accuracy_ci95_low": 0.2889248640080903,
+      "tool_selection_accuracy_mean": 0.3125,
+      "tool_selection_accuracy_std": 0.020833333333333315,
+      "unknown_detection_f1_ci95_high": 0.0,
+      "unknown_detection_f1_ci95_low": 0.0,
+      "unknown_detection_f1_mean": 0.0,
+      "unknown_detection_f1_std": 0.0
+    },
+    {
+      "avg_latency_ms_ci95_high": 0.34675712727910074,
+      "avg_latency_ms_ci95_low": 0.32758767892845014,
+      "avg_latency_ms_mean": 0.33717240310377544,
+      "avg_latency_ms_std": 0.008470014922549564,
+      "end_to_end_success_rate_ci95_high": 0.33155555555555555,
+      "end_to_end_success_rate_ci95_low": 0.15733333333333333,
+      "end_to_end_success_rate_mean": 0.24444444444444444,
+      "end_to_end_success_rate_std": 0.07698003589195009,
+      "hallucination_rate_ci95_high": 0.39951565639526027,
+      "hallucination_rate_ci95_low": 0.27826212138251755,
+      "hallucination_rate_mean": 0.3388888888888889,
+      "hallucination_rate_std": 0.053575837561071996,
+      "num_seeds": 3.0,
+      "section": "week07",
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "setting": "balanced_policy_test_after",
+      "source_files": [
+        "/root/autodl-tmp/project/outputs/reports/open_world_compare_balanced_seed42.json",
+        "/root/autodl-tmp/project/outputs/reports/open_world_compare_balanced_seed43.json",
+        "/root/autodl-tmp/project/outputs/reports/open_world_compare_balanced_seed44.json"
+      ],
+      "split": "test",
+      "tool_selection_accuracy_ci95_high": 0.3107378287557109,
+      "tool_selection_accuracy_ci95_low": 0.07815106013317805,
+      "tool_selection_accuracy_mean": 0.19444444444444445,
+      "tool_selection_accuracy_std": 0.10276839296492182,
+      "unknown_detection_f1_ci95_high": 0.3122717135236005,
+      "unknown_detection_f1_ci95_low": 0.287262002401794,
+      "unknown_detection_f1_mean": 0.29976685796269725,
+      "unknown_detection_f1_std": 0.011050533251425841
+    },
+    {
+      "avg_latency_ms_ci95_high": 704.5624547472953,
+      "avg_latency_ms_ci95_low": 657.9310105778566,
+      "avg_latency_ms_mean": 681.2467326625759,
+      "avg_latency_ms_std": 20.604089421372308,
+      "end_to_end_success_rate_ci95_high": 0.49401846474300914,
+      "end_to_end_success_rate_ci95_low": 0.4034174326928883,
+      "end_to_end_success_rate_mean": 0.44871794871794873,
+      "end_to_end_success_rate_std": 0.04003203845127179,
+      "failure_with_code_rate_ci95_high": 1.0,
+      "failure_with_code_rate_ci95_low": 1.0,
+      "failure_with_code_rate_mean": 1.0,
+      "failure_with_code_rate_std": 0.0,
+      "failure_with_recover_path_rate_ci95_high": 1.0,
+      "failure_with_recover_path_rate_ci95_low": 1.0,
+      "failure_with_recover_path_rate_mean": 1.0,
+      "failure_with_recover_path_rate_std": 0.0,
+      "num_failures_ci95_high": 34.94666666666667,
+      "num_failures_ci95_low": 29.720000000000002,
+      "num_failures_mean": 32.333333333333336,
+      "num_failures_std": 2.309401076758503,
+      "num_seeds": 3.0,
+      "recover_success_rate_ci95_high": 0.2815384615384615,
+      "recover_success_rate_ci95_low": 0.2312820512820513,
+      "recover_success_rate_mean": 0.2564102564102564,
+      "recover_success_rate_std": 0.02220577958421636,
+      "section": "week08",
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "setting": "e2e_pser_balanced",
+      "source_files": [
+        "/root/autodl-tmp/project/outputs/reports/20260223_open_world_e2e_eval_plan_select_execute_recover_v1_42_e2e_eval.json",
+        "/root/autodl-tmp/project/outputs/reports/20260223_open_world_e2e_eval_plan_select_execute_recover_v1_43_e2e_eval.json",
+        "/root/autodl-tmp/project/outputs/reports/20260223_open_world_e2e_eval_plan_select_execute_recover_v1_44_e2e_eval.json"
+      ],
+      "split": "test_complex"
+    },
+    {
+      "avg_latency_ms_ci95_high": 704.5624547472953,
+      "avg_latency_ms_ci95_low": 657.9310105778566,
+      "avg_latency_ms_mean": 681.2467326625759,
+      "avg_latency_ms_std": 20.604089421372308,
+      "end_to_end_success_rate_ci95_high": 0.49401846474300914,
+      "end_to_end_success_rate_ci95_low": 0.4034174326928883,
+      "end_to_end_success_rate_mean": 0.44871794871794873,
+      "end_to_end_success_rate_std": 0.04003203845127179,
+      "failure_with_code_rate_ci95_high": 1.0,
+      "failure_with_code_rate_ci95_low": 1.0,
+      "failure_with_code_rate_mean": 1.0,
+      "failure_with_code_rate_std": 0.0,
+      "failure_with_recover_path_rate_ci95_high": 1.0,
+      "failure_with_recover_path_rate_ci95_low": 1.0,
+      "failure_with_recover_path_rate_mean": 1.0,
+      "failure_with_recover_path_rate_std": 0.0,
+      "num_failures_ci95_high": 34.94666666666667,
+      "num_failures_ci95_low": 29.720000000000002,
+      "num_failures_mean": 32.333333333333336,
+      "num_failures_std": 2.309401076758503,
+      "num_seeds": 3.0,
+      "recover_success_rate_ci95_high": 0.2815384615384615,
+      "recover_success_rate_ci95_low": 0.2312820512820513,
+      "recover_success_rate_mean": 0.2564102564102564,
+      "recover_success_rate_std": 0.02220577958421636,
+      "section": "week09_ablation",
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "setting": "full",
+      "source_files": [
+        "/root/autodl-tmp/project/outputs/reports/20260223_week09_ablation_pser_mock_42_ablation_report.json",
+        "/root/autodl-tmp/project/outputs/reports/20260223_week09_ablation_pser_mock_43_ablation_report.json",
+        "/root/autodl-tmp/project/outputs/reports/20260223_week09_ablation_pser_mock_44_ablation_report.json"
+      ],
+      "split": "test_complex"
+    },
+    {
+      "avg_latency_ms_ci95_high": 279.2037554513379,
+      "avg_latency_ms_ci95_low": 258.9717969091639,
+      "avg_latency_ms_mean": 269.0877761802509,
+      "avg_latency_ms_std": 8.939484727467454,
+      "end_to_end_success_rate_ci95_high": 0.2815384615384615,
+      "end_to_end_success_rate_ci95_low": 0.2312820512820513,
+      "end_to_end_success_rate_mean": 0.2564102564102564,
+      "end_to_end_success_rate_std": 0.02220577958421636,
+      "failure_with_code_rate_ci95_high": 1.0,
+      "failure_with_code_rate_ci95_low": 1.0,
+      "failure_with_code_rate_mean": 1.0,
+      "failure_with_code_rate_std": 0.0,
+      "failure_with_recover_path_rate_ci95_high": 1.0,
+      "failure_with_recover_path_rate_ci95_low": 1.0,
+      "failure_with_recover_path_rate_mean": 1.0,
+      "failure_with_recover_path_rate_std": 0.0,
+      "num_failures_ci95_high": 43.131606527611666,
+      "num_failures_ci95_low": 40.868393472388334,
+      "num_failures_mean": 42.0,
+      "num_failures_std": 1.0,
+      "num_seeds": 3.0,
+      "recover_success_rate_ci95_high": 0.0,
+      "recover_success_rate_ci95_low": 0.0,
+      "recover_success_rate_mean": 0.0,
+      "recover_success_rate_std": 0.0,
+      "section": "week09_ablation",
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "setting": "w_o_recover",
+      "source_files": [
+        "/root/autodl-tmp/project/outputs/reports/20260223_week09_ablation_pser_mock_42_ablation_report.json",
+        "/root/autodl-tmp/project/outputs/reports/20260223_week09_ablation_pser_mock_43_ablation_report.json",
+        "/root/autodl-tmp/project/outputs/reports/20260223_week09_ablation_pser_mock_44_ablation_report.json"
+      ],
+      "split": "test_complex"
+    },
+    {
+      "avg_latency_ms_ci95_high": 704.5624547472953,
+      "avg_latency_ms_ci95_low": 657.9310105778566,
+      "avg_latency_ms_mean": 681.2467326625759,
+      "avg_latency_ms_std": 20.604089421372308,
+      "end_to_end_success_rate_ci95_high": 0.49401846474300914,
+      "end_to_end_success_rate_ci95_low": 0.4034174326928883,
+      "end_to_end_success_rate_mean": 0.44871794871794873,
+      "end_to_end_success_rate_std": 0.04003203845127179,
+      "failure_with_code_rate_ci95_high": 1.0,
+      "failure_with_code_rate_ci95_low": 1.0,
+      "failure_with_code_rate_mean": 1.0,
+      "failure_with_code_rate_std": 0.0,
+      "failure_with_recover_path_rate_ci95_high": 1.0,
+      "failure_with_recover_path_rate_ci95_low": 1.0,
+      "failure_with_recover_path_rate_mean": 1.0,
+      "failure_with_recover_path_rate_std": 0.0,
+      "num_failures_ci95_high": 34.94666666666667,
+      "num_failures_ci95_low": 29.720000000000002,
+      "num_failures_mean": 32.333333333333336,
+      "num_failures_std": 2.309401076758503,
+      "num_seeds": 3.0,
+      "recover_success_rate_ci95_high": 0.2815384615384615,
+      "recover_success_rate_ci95_low": 0.2312820512820513,
+      "recover_success_rate_mean": 0.2564102564102564,
+      "recover_success_rate_std": 0.02220577958421636,
+      "section": "week09_robustness",
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "setting": "baseline",
+      "source_files": [
+        "/root/autodl-tmp/project/outputs/reports/20260223_week09_robustness_pser_mock_42_robustness_report.json",
+        "/root/autodl-tmp/project/outputs/reports/20260223_week09_robustness_pser_mock_43_robustness_report.json",
+        "/root/autodl-tmp/project/outputs/reports/20260223_week09_robustness_pser_mock_44_robustness_report.json"
+      ],
+      "split": "test_complex"
+    },
+    {
+      "avg_latency_ms_ci95_high": 786.0614095621739,
+      "avg_latency_ms_ci95_low": 780.9080994285338,
+      "avg_latency_ms_mean": 783.4847544953539,
+      "avg_latency_ms_std": 2.2769885149551605,
+      "end_to_end_success_rate_ci95_high": 0.17282051282051283,
+      "end_to_end_success_rate_ci95_low": 0.1476923076923077,
+      "end_to_end_success_rate_mean": 0.16025641025641027,
+      "end_to_end_success_rate_std": 0.01110288979210818,
+      "failure_with_code_rate_ci95_high": 1.0,
+      "failure_with_code_rate_ci95_low": 1.0,
+      "failure_with_code_rate_mean": 1.0,
+      "failure_with_code_rate_std": 0.0,
+      "failure_with_recover_path_rate_ci95_high": 1.0,
+      "failure_with_recover_path_rate_ci95_low": 1.0,
+      "failure_with_recover_path_rate_mean": 1.0,
+      "failure_with_recover_path_rate_std": 0.0,
+      "num_failures_ci95_high": 48.98666666666667,
+      "num_failures_ci95_low": 47.68,
+      "num_failures_mean": 48.333333333333336,
+      "num_failures_std": 0.5773502691896257,
+      "num_seeds": 3.0,
+      "recover_success_rate_ci95_high": 0.17282051282051283,
+      "recover_success_rate_ci95_low": 0.1476923076923077,
+      "recover_success_rate_mean": 0.16025641025641027,
+      "recover_success_rate_std": 0.01110288979210818,
+      "section": "week09_robustness",
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "setting": "tool_offline",
+      "source_files": [
+        "/root/autodl-tmp/project/outputs/reports/20260223_week09_robustness_pser_mock_42_robustness_report.json",
+        "/root/autodl-tmp/project/outputs/reports/20260223_week09_robustness_pser_mock_43_robustness_report.json",
+        "/root/autodl-tmp/project/outputs/reports/20260223_week09_robustness_pser_mock_44_robustness_report.json"
+      ],
+      "split": "test_complex"
+    }
+  ],
+  "source_files": {
+    "week06_base_test_reports": [
+      "/root/autodl-tmp/project/outputs/reports/20260223_open_world_tool_agent_main_v1_mm_openworld_42_test_eval.json",
+      "/root/autodl-tmp/project/outputs/reports/20260223_open_world_tool_agent_main_v1_mm_openworld_43_test_eval.json",
+      "/root/autodl-tmp/project/outputs/reports/20260223_open_world_tool_agent_main_v1_mm_openworld_44_test_eval.json"
+    ],
+    "week07_balanced_reports": [
+      "/root/autodl-tmp/project/outputs/reports/open_world_compare_balanced_seed42.json",
+      "/root/autodl-tmp/project/outputs/reports/open_world_compare_balanced_seed43.json",
+      "/root/autodl-tmp/project/outputs/reports/open_world_compare_balanced_seed44.json"
+    ],
+    "week08_e2e_reports": [
+      "/root/autodl-tmp/project/outputs/reports/20260223_open_world_e2e_eval_plan_select_execute_recover_v1_42_e2e_eval.json",
+      "/root/autodl-tmp/project/outputs/reports/20260223_open_world_e2e_eval_plan_select_execute_recover_v1_43_e2e_eval.json",
+      "/root/autodl-tmp/project/outputs/reports/20260223_open_world_e2e_eval_plan_select_execute_recover_v1_44_e2e_eval.json"
+    ],
+    "week09_ablation_reports": [
+      "/root/autodl-tmp/project/outputs/reports/20260223_week09_ablation_pser_mock_42_ablation_report.json",
+      "/root/autodl-tmp/project/outputs/reports/20260223_week09_ablation_pser_mock_43_ablation_report.json",
+      "/root/autodl-tmp/project/outputs/reports/20260223_week09_ablation_pser_mock_44_ablation_report.json"
+    ],
+    "week09_robustness_reports": [
+      "/root/autodl-tmp/project/outputs/reports/20260223_week09_robustness_pser_mock_42_robustness_report.json",
+      "/root/autodl-tmp/project/outputs/reports/20260223_week09_robustness_pser_mock_43_robustness_report.json",
+      "/root/autodl-tmp/project/outputs/reports/20260223_week09_robustness_pser_mock_44_robustness_report.json"
+    ]
+  }
+}

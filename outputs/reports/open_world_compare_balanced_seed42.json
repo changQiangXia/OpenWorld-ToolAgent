@@ -1,0 +1,137 @@
+{
+  "calibration": {
+    "f1": 0.07407407407407407,
+    "false_reject_rate": 0.17073170731707318,
+    "fn": 18,
+    "fp": 7,
+    "precision": 0.125,
+    "recall": 0.05263157894736842,
+    "threshold": 0.15000000000000002,
+    "tn": 34,
+    "tp": 1,
+    "unknown_miss_rate": 0.9473684210526315
+  },
+  "policy": {
+    "dev_action_summary": {
+      "clarify_rate": 0.18333333333333332,
+      "effective_threshold": 0.15000000000000002,
+      "execute_rate": 0.6833333333333333,
+      "min_confidence": 0.35,
+      "num_clarify": 11.0,
+      "num_execute": 41.0,
+      "num_reject": 8.0,
+      "num_total": 60.0,
+      "reject_rate": 0.13333333333333333
+    },
+    "effective_threshold": 0.15000000000000002,
+    "test_action_summary": {
+      "clarify_rate": 0.11666666666666667,
+      "effective_threshold": 0.15000000000000002,
+      "execute_rate": 0.6666666666666666,
+      "min_confidence": 0.35,
+      "num_clarify": 7.0,
+      "num_execute": 40.0,
+      "num_reject": 13.0,
+      "num_total": 60.0,
+      "reject_rate": 0.21666666666666667
+    }
+  },
+  "splits": {
+    "dev": {
+      "after": {
+        "metrics": {
+          "avg_cost_per_request_usd": 0.0,
+          "avg_latency_ms": 0.2656470363338791,
+          "end_to_end_success_rate": 0.23333333333333334,
+          "hallucination_rate": 0.26666666666666666,
+          "json_valid_rate": 1.0,
+          "num_predictions": 60.0,
+          "tool_selection_accuracy": 0.24390243902439024,
+          "unknown_detection_f1": 0.21052631578947367
+        },
+        "status": {
+          "false_reject_count": 15.0,
+          "false_reject_rate": 0.25,
+          "num_total": 60.0,
+          "unknown_miss_count": 15.0,
+          "unknown_miss_rate": 0.25
+        }
+      },
+      "before": {
+        "metrics": {
+          "avg_cost_per_request_usd": 0.0,
+          "avg_latency_ms": 0.2656470363338791,
+          "end_to_end_success_rate": 0.25,
+          "hallucination_rate": 0.43333333333333335,
+          "json_valid_rate": 1.0,
+          "num_predictions": 60.0,
+          "tool_selection_accuracy": 0.36585365853658536,
+          "unknown_detection_f1": 0.0
+        },
+        "status": {
+          "false_reject_count": 0.0,
+          "false_reject_rate": 0.0,
+          "num_total": 60.0,
+          "unknown_miss_count": 19.0,
+          "unknown_miss_rate": 0.31666666666666665
+        }
+      },
+      "delta": {
+        "delta_end_to_end_success_rate": -0.016666666666666663,
+        "delta_hallucination_rate": -0.16666666666666669,
+        "delta_json_valid_rate": 0.0,
+        "delta_tool_selection_accuracy": -0.12195121951219512,
+        "delta_unknown_detection_f1": 0.21052631578947367
+      }
+    },
+    "test": {
+      "after": {
+        "metrics": {
+          "avg_cost_per_request_usd": 0.0,
+          "avg_latency_ms": 0.34069704512755083,
+          "end_to_end_success_rate": 0.3333333333333333,
+          "hallucination_rate": 0.3,
+          "json_valid_rate": 1.0,
+          "num_predictions": 60.0,
+          "tool_selection_accuracy": 0.3125,
+          "unknown_detection_f1": 0.3125
+        },
+        "status": {
+          "false_reject_count": 15.0,
+          "false_reject_rate": 0.25,
+          "num_total": 60.0,
+          "unknown_miss_count": 7.0,
+          "unknown_miss_rate": 0.11666666666666667
+        }
+      },
+      "before": {
+        "metrics": {
+          "avg_cost_per_request_usd": 0.0,
+          "avg_latency_ms": 0.34069704512755083,
+          "end_to_end_success_rate": 0.26666666666666666,
+          "hallucination_rate": 0.5333333333333333,
+          "json_valid_rate": 1.0,
+          "num_predictions": 60.0,
+          "tool_selection_accuracy": 0.3333333333333333,
+          "unknown_detection_f1": 0.0
+        },
+        "status": {
+          "false_reject_count": 0.0,
+          "false_reject_rate": 0.0,
+          "num_total": 60.0,
+          "unknown_miss_count": 12.0,
+          "unknown_miss_rate": 0.2
+        }
+      },
+      "delta": {
+        "delta_end_to_end_success_rate": 0.06666666666666665,
+        "delta_hallucination_rate": -0.23333333333333334,
+        "delta_json_valid_rate": 0.0,
+        "delta_tool_selection_accuracy": -0.020833333333333315,
+        "delta_unknown_detection_f1": 0.3125
+      }
+    }
+  },
+  "strategy": "balanced",
+  "unknown_token": "__unknown__"
+}

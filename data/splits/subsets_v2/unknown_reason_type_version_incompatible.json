@@ -1,0 +1,59 @@
+{
+  "counts": {
+    "all": 20,
+    "dev": 8,
+    "test": 12,
+    "train": 0
+  },
+  "ids": {
+    "all": [
+      "dev_000004",
+      "dev_000006",
+      "dev_000048",
+      "dev_000072",
+      "dev_000095",
+      "dev_000146",
+      "dev_000182",
+      "dev_000188",
+      "test_000034",
+      "test_000048",
+      "test_000053",
+      "test_000059",
+      "test_000062",
+      "test_000097",
+      "test_000108",
+      "test_000115",
+      "test_000136",
+      "test_000163",
+      "test_000176",
+      "test_000191"
+    ],
+    "dev": [
+      "dev_000004",
+      "dev_000006",
+      "dev_000048",
+      "dev_000072",
+      "dev_000095",
+      "dev_000146",
+      "dev_000182",
+      "dev_000188"
+    ],
+    "test": [
+      "test_000034",
+      "test_000048",
+      "test_000053",
+      "test_000059",
+      "test_000062",
+      "test_000097",
+      "test_000108",
+      "test_000115",
+      "test_000136",
+      "test_000163",
+      "test_000176",
+      "test_000191"
+    ],
+    "train": []
+  },
+  "subset_key": "unknown_reason_type",
+  "subset_value": "version_incompatible"
+}

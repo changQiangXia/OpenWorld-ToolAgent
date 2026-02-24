@@ -1,0 +1,48 @@
+{
+  "artifacts": {
+    "checkpoint_file": "/root/autodl-tmp/project/outputs/checkpoints/20260223_open_world_tool_agent_main_v1_small_43.pt",
+    "log_file": "/root/autodl-tmp/project/outputs/logs/20260223_open_world_tool_agent_main_v1_small_43.log",
+    "prediction_file": "/root/autodl-tmp/project/outputs/predictions/20260223_open_world_tool_agent_main_v1_small_43_dev.jsonl",
+    "report_file": "/root/autodl-tmp/project/outputs/reports/20260223_open_world_tool_agent_main_v1_small_43.json"
+  },
+  "config_hash": "c23e8a9dc9ad",
+  "config_path": "/root/autodl-tmp/project/configs/train/main_v1_small.yaml",
+  "dev_file": "/root/autodl-tmp/project/data/splits/dev.jsonl",
+  "device": "cpu",
+  "exp_id": "20260223_open_world_tool_agent_main_v1_small_43",
+  "metrics": {
+    "avg_cost_per_request_usd": 0.0,
+    "avg_latency_ms": 0.2644132822751999,
+    "end_to_end_success_rate": 0.18333333333333332,
+    "hallucination_rate": 0.5,
+    "json_valid_rate": 1.0,
+    "num_predictions": 60.0,
+    "tool_selection_accuracy": 0.2682926829268293,
+    "unknown_detection_f1": 0.0
+  },
+  "tool_vocab": [
+    "ocr_image",
+    "qa_text",
+    "search_web",
+    "summarize_text",
+    "transcribe_audio"
+  ],
+  "tool_vocab_size": 5,
+  "train_file": "/root/autodl-tmp/project/data/splits/train.jsonl",
+  "training_summary": {
+    "batch_size": 16,
+    "last_eval_metrics": {
+      "avg_cost_per_request_usd": 0.0,
+      "avg_latency_ms": 0.2648541082938515,
+      "end_to_end_success_rate": 0.18333333333333332,
+      "hallucination_rate": 0.5,
+      "json_valid_rate": 1.0,
+      "num_predictions": 60.0,
+      "tool_selection_accuracy": 0.2682926829268293,
+      "unknown_detection_f1": 0.0
+    },
+    "loss_last": 0.35814282298088074,
+    "loss_mean": 0.51513425608476,
+    "max_steps": 120
+  }
+}

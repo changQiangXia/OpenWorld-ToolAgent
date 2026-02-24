@@ -1,0 +1,167 @@
+{
+  "benchmark_version": "benchmark_v2_real",
+  "build_options": {
+    "drop_template_queries": true,
+    "force_include_gold_in_candidates": true,
+    "max_samples_per_split": 200,
+    "query_strategy": "auto",
+    "real_data_first": true,
+    "strip_split_tags": true,
+    "subset_keys": [
+      "modality",
+      "tool_status",
+      "mapping_type",
+      "ambiguity_type",
+      "unknown_reason_type",
+      "is_unknown_gold"
+    ]
+  },
+  "config_path": "/root/autodl-tmp/project/configs/data/benchmark_v2_real.yaml",
+  "generated_at_utc": "2026-02-24T13:21:27.392364+00:00",
+  "inputs": {
+    "dev": "/root/autodl-tmp/project/data/splits/baseline1_dev.jsonl",
+    "test": "/root/autodl-tmp/project/data/splits/baseline1_test.jsonl",
+    "train": "/root/autodl-tmp/project/data/splits/baseline1_train.jsonl"
+  },
+  "outputs": {
+    "dev": "/root/autodl-tmp/project/data/splits/dev_v2_real.jsonl",
+    "manifest": "/root/autodl-tmp/project/data/splits/benchmark_v2_real_manifest.json",
+    "report": "/root/autodl-tmp/project/outputs/reports/benchmark_v2_real_build_report.json",
+    "subsets_dir": "/root/autodl-tmp/project/data/splits/subsets_v2_real",
+    "test": "/root/autodl-tmp/project/data/splits/test_v2_real.jsonl",
+    "train": "/root/autodl-tmp/project/data/splits/train_v2_real.jsonl"
+  },
+  "split_id_hash": {
+    "dev": "52fa29240f3a8933",
+    "test": "b7f34330267a5c7b",
+    "train": "7488b42604cfed53"
+  },
+  "split_stats": {
+    "dev": {
+      "ambiguity_distribution": {
+        "lexical_ambiguity": 40,
+        "missing_constraints": 38,
+        "multimodal_conflict": 33,
+        "underspecified_tool_goal": 46,
+        "version_drift": 43
+      },
+      "mapping_distribution": {
+        "one_to_one": 200
+      },
+      "modality_distribution": {
+        "audio": 200
+      },
+      "num_rows": 200,
+      "tool_status_distribution": {
+        "newly_added": 48,
+        "offline": 51,
+        "replaced": 45,
+        "stable": 56
+      },
+      "unknown_count": 34,
+      "unknown_ratio": 0.17
+    },
+    "test": {
+      "ambiguity_distribution": {
+        "lexical_ambiguity": 36,
+        "missing_constraints": 44,
+        "multimodal_conflict": 34,
+        "underspecified_tool_goal": 49,
+        "version_drift": 37
+      },
+      "mapping_distribution": {
+        "one_to_one": 200
+      },
+      "modality_distribution": {
+        "audio": 200
+      },
+      "num_rows": 200,
+      "tool_status_distribution": {
+        "newly_added": 42,
+        "offline": 57,
+        "replaced": 54,
+        "stable": 47
+      },
+      "unknown_count": 49,
+      "unknown_ratio": 0.245
+    },
+    "train": {
+      "ambiguity_distribution": {
+        "lexical_ambiguity": 33,
+        "missing_constraints": 43,
+        "multimodal_conflict": 45,
+        "underspecified_tool_goal": 45,
+        "version_drift": 34
+      },
+      "mapping_distribution": {
+        "one_to_one": 200
+      },
+      "modality_distribution": {
+        "audio": 200
+      },
+      "num_rows": 200,
+      "tool_status_distribution": {
+        "newly_added": 51,
+        "offline": 56,
+        "replaced": 52,
+        "stable": 41
+      },
+      "unknown_count": 0,
+      "unknown_ratio": 0.0
+    }
+  },
+  "subset_files": {
+    "files": [
+      "/root/autodl-tmp/project/data/splits/subsets_v2_real/ambiguity_type_lexical_ambiguity.json",
+      "/root/autodl-tmp/project/data/splits/subsets_v2_real/ambiguity_type_missing_constraints.json",
+      "/root/autodl-tmp/project/data/splits/subsets_v2_real/ambiguity_type_multimodal_conflict.json",
+      "/root/autodl-tmp/project/data/splits/subsets_v2_real/ambiguity_type_underspecified_tool_goal.json",
+      "/root/autodl-tmp/project/data/splits/subsets_v2_real/ambiguity_type_version_drift.json",
+      "/root/autodl-tmp/project/data/splits/subsets_v2_real/is_unknown_gold_false.json",
+      "/root/autodl-tmp/project/data/splits/subsets_v2_real/is_unknown_gold_true.json",
+      "/root/autodl-tmp/project/data/splits/subsets_v2_real/mapping_type_one_to_one.json",
+      "/root/autodl-tmp/project/data/splits/subsets_v2_real/modality_audio.json",
+      "/root/autodl-tmp/project/data/splits/subsets_v2_real/tool_status_newly_added.json",
+      "/root/autodl-tmp/project/data/splits/subsets_v2_real/tool_status_offline.json",
+      "/root/autodl-tmp/project/data/splits/subsets_v2_real/tool_status_replaced.json",
+      "/root/autodl-tmp/project/data/splits/subsets_v2_real/tool_status_stable.json",
+      "/root/autodl-tmp/project/data/splits/subsets_v2_real/unknown_reason_type_missing_capability.json",
+      "/root/autodl-tmp/project/data/splits/subsets_v2_real/unknown_reason_type_none.json",
+      "/root/autodl-tmp/project/data/splits/subsets_v2_real/unknown_reason_type_tool_unavailable.json",
+      "/root/autodl-tmp/project/data/splits/subsets_v2_real/unknown_reason_type_version_incompatible.json"
+    ],
+    "num_files": 17,
+    "summary": {
+      "ambiguity_type": {
+        "lexical_ambiguity": 109,
+        "missing_constraints": 125,
+        "multimodal_conflict": 112,
+        "underspecified_tool_goal": 140,
+        "version_drift": 114
+      },
+      "is_unknown_gold": {
+        "False": 517,
+        "True": 83
+      },
+      "mapping_type": {
+        "one_to_one": 600
+      },
+      "modality": {
+        "audio": 600
+      },
+      "tool_status": {
+        "newly_added": 141,
+        "offline": 164,
+        "replaced": 151,
+        "stable": 144
+      },
+      "unknown_reason_type": {
+        "missing_capability": 37,
+        "none": 517,
+        "tool_unavailable": 26,
+        "version_incompatible": 20
+      }
+    }
+  },
+  "unknown_token": "__unknown__"
+}

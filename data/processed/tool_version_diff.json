@@ -1,0 +1,34 @@
+{
+  "artifacts": {
+    "corpus": "/root/autodl-tmp/project/data/processed/tool_corpus.jsonl",
+    "snapshot_vt": "/root/autodl-tmp/project/data/processed/tool_snapshot_vt.json",
+    "snapshot_vt1": "/root/autodl-tmp/project/data/processed/tool_snapshot_vt1.json"
+  },
+  "diff": {
+    "added_tool_ids": [
+      "calendar_api:1.0.0",
+      "ocr_image:2.0.0",
+      "video_caption:0.9.0"
+    ],
+    "diff_hash": "3e57464f7831de53",
+    "removed_tool_ids": [
+      "legacy_weather:0.8.0",
+      "ocr_image:1.0.0"
+    ],
+    "snapshot_sizes": {
+      "v_t": 5,
+      "v_t1": 6
+    },
+    "status_changed_tool_ids": [],
+    "version_replaced_tool_names": [
+      "ocr_image"
+    ]
+  },
+  "generated_at_utc": "2026-02-23T03:53:23.685823+00:00",
+  "num_cleaned": 8,
+  "num_deduped": 8,
+  "num_dropped": 0,
+  "num_raw": 8,
+  "seed": 42,
+  "source_mode": "synthetic"
+}

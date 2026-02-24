@@ -1,0 +1,19 @@
+{
+  "artifacts": {
+    "prediction_file": "/root/autodl-tmp/project/outputs/predictions/20260223_open_world_tool_agent_main_v1_mm_openworld_44_test_eval.jsonl",
+    "report_file": "/root/autodl-tmp/project/outputs/reports/20260223_open_world_tool_agent_main_v1_mm_openworld_44_test_eval.json"
+  },
+  "checkpoint": "/root/autodl-tmp/project/outputs/checkpoints/20260223_open_world_tool_agent_main_v1_mm_openworld_44.pt",
+  "exp_id": "20260223_open_world_tool_agent_main_v1_mm_openworld_44",
+  "metrics": {
+    "avg_cost_per_request_usd": 0.0,
+    "avg_latency_ms": 0.34331095715363813,
+    "end_to_end_success_rate": 0.23333333333333334,
+    "hallucination_rate": 0.5666666666666667,
+    "json_valid_rate": 1.0,
+    "num_predictions": 60.0,
+    "tool_selection_accuracy": 0.2916666666666667,
+    "unknown_detection_f1": 0.0
+  },
+  "split_file": "/root/autodl-tmp/project/data/splits/test.jsonl"
+}

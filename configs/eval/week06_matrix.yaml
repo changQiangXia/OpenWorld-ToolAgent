@@ -1,0 +1,29 @@
+week: 06
+objective: main_v1 first-round results + error analysis
+
+models:
+  - name: small
+    train_config: configs/train/main_v1_small.yaml
+  - name: base
+    train_config: configs/train/main_v1.yaml
+  - name: large
+    train_config: configs/train/main_v1_large.yaml
+
+seeds:
+  - 42
+  - 43
+  - 44
+
+eval_splits:
+  - dev
+  - test
+
+subsets_for_analysis:
+  - modality
+  - ambiguity_type
+  - tool_status
+  - mapping_type
+
+notes:
+  - do not run long jobs automatically
+  - run in sequence and aggregate metrics to outputs/reports/main_v1_week06_matrix_summary.json

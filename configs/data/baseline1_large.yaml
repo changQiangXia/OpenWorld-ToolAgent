@@ -1,0 +1,41 @@
+task_name: tool_selection
+benchmark_name: synthetic_open_world_v1_large
+seed: 42
+write_splits: true
+split_output_dir: data/splits
+
+split_sizes:
+  train: 120000
+  dev: 12000
+  test: 12000
+
+modalities:
+  - text
+  - image
+  - audio
+  - video
+
+tools:
+  - search_web
+  - ocr_image
+  - transcribe_audio
+  - qa_text
+  - summarize_text
+
+unknown_token: __unknown__
+unknown_ratio:
+  dev: 0.20
+  test: 0.25
+
+ambiguity_types:
+  - lexical_ambiguity
+  - missing_constraints
+  - underspecified_tool_goal
+  - multimodal_conflict
+  - version_drift
+
+tool_statuses:
+  - stable
+  - offline
+  - replaced
+  - newly_added

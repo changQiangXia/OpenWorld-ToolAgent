@@ -1,0 +1,23 @@
+{
+  "artifacts": {
+    "dev_out": "/root/autodl-tmp/project/data/splits/dev_v2.jsonl",
+    "subsets_dir": "/root/autodl-tmp/project/data/splits/subsets_v2",
+    "test_out": "/root/autodl-tmp/project/data/splits/test_v2.jsonl",
+    "train_out": "/root/autodl-tmp/project/data/splits/train_v2.jsonl"
+  },
+  "benchmark_version": "benchmark_v2",
+  "counts": {
+    "dev": 60,
+    "test": 60,
+    "train": 120
+  },
+  "generated_at_utc": "2026-02-24T13:11:35.498707+00:00",
+  "manifest": "/root/autodl-tmp/project/data/splits/benchmark_v2_manifest.json",
+  "template_query_count": 240,
+  "template_query_ratio": 1.0,
+  "unknown_counts": {
+    "dev": 19,
+    "test": 12,
+    "train": 0
+  }
+}

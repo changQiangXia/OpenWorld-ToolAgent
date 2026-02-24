@@ -1,0 +1,80 @@
+[
+  {
+    "description": "",
+    "modalities": [
+      "text"
+    ],
+    "name": "legacy_weather",
+    "snapshots": [
+      "t"
+    ],
+    "source": "synthetic_seed",
+    "status": "offline",
+    "task": "weather",
+    "tool_id": "legacy_weather:0.8.0",
+    "version": "0.8.0"
+  },
+  {
+    "description": "",
+    "modalities": [
+      "image"
+    ],
+    "name": "ocr_image",
+    "snapshots": [
+      "t"
+    ],
+    "source": "synthetic_seed",
+    "status": "replaced",
+    "task": "ocr",
+    "tool_id": "ocr_image:1.0.0",
+    "version": "1.0.0"
+  },
+  {
+    "description": "",
+    "modalities": [
+      "text"
+    ],
+    "name": "search_web",
+    "snapshots": [
+      "t",
+      "t1"
+    ],
+    "source": "synthetic_seed",
+    "status": "stable",
+    "task": "web_search",
+    "tool_id": "search_web:1.0.0",
+    "version": "1.0.0"
+  },
+  {
+    "description": "",
+    "modalities": [
+      "text"
+    ],
+    "name": "summarize_text",
+    "snapshots": [
+      "t",
+      "t1"
+    ],
+    "source": "synthetic_seed",
+    "status": "stable",
+    "task": "summarization",
+    "tool_id": "summarize_text:1.0.0",
+    "version": "1.0.0"
+  },
+  {
+    "description": "",
+    "modalities": [
+      "audio"
+    ],
+    "name": "transcribe_audio",
+    "snapshots": [
+      "t",
+      "t1"
+    ],
+    "source": "synthetic_seed",
+    "status": "stable",
+    "task": "transcription",
+    "tool_id": "transcribe_audio:1.1.0",
+    "version": "1.1.0"
+  }
+]

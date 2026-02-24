@@ -1,0 +1,95 @@
+[
+  {
+    "description": "",
+    "modalities": [
+      "text"
+    ],
+    "name": "calendar_api",
+    "snapshots": [
+      "t1"
+    ],
+    "source": "synthetic_seed",
+    "status": "newly_added",
+    "task": "scheduling",
+    "tool_id": "calendar_api:1.0.0",
+    "version": "1.0.0"
+  },
+  {
+    "description": "",
+    "modalities": [
+      "image"
+    ],
+    "name": "ocr_image",
+    "snapshots": [
+      "t1"
+    ],
+    "source": "synthetic_seed",
+    "status": "stable",
+    "task": "ocr",
+    "tool_id": "ocr_image:2.0.0",
+    "version": "2.0.0"
+  },
+  {
+    "description": "",
+    "modalities": [
+      "text"
+    ],
+    "name": "search_web",
+    "snapshots": [
+      "t",
+      "t1"
+    ],
+    "source": "synthetic_seed",
+    "status": "stable",
+    "task": "web_search",
+    "tool_id": "search_web:1.0.0",
+    "version": "1.0.0"
+  },
+  {
+    "description": "",
+    "modalities": [
+      "text"
+    ],
+    "name": "summarize_text",
+    "snapshots": [
+      "t",
+      "t1"
+    ],
+    "source": "synthetic_seed",
+    "status": "stable",
+    "task": "summarization",
+    "tool_id": "summarize_text:1.0.0",
+    "version": "1.0.0"
+  },
+  {
+    "description": "",
+    "modalities": [
+      "audio"
+    ],
+    "name": "transcribe_audio",
+    "snapshots": [
+      "t",
+      "t1"
+    ],
+    "source": "synthetic_seed",
+    "status": "stable",
+    "task": "transcription",
+    "tool_id": "transcribe_audio:1.1.0",
+    "version": "1.1.0"
+  },
+  {
+    "description": "",
+    "modalities": [
+      "video"
+    ],
+    "name": "video_caption",
+    "snapshots": [
+      "t1"
+    ],
+    "source": "synthetic_seed",
+    "status": "offline",
+    "task": "caption",
+    "tool_id": "video_caption:0.9.0",
+    "version": "0.9.0"
+  }
+]

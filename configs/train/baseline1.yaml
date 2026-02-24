@@ -1,0 +1,14 @@
+model_name: majority_tool_baseline
+seed: 42
+log_level: INFO
+predict_unknown: false
+unknown_token: __unknown__
+cost_per_request_usd: 0.0
+
+output_dirs:
+  logs: outputs/logs
+  reports: outputs/reports
+  predictions: outputs/predictions
+
+retry:
+  max_retries: 2

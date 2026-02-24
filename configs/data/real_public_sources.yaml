@@ -1,0 +1,71 @@
+project_root: /root/autodl-tmp/project
+seed: 42
+unknown_token: __unknown__
+
+tools:
+  - search_web
+  - ocr_image
+  - transcribe_audio
+  - qa_text
+  - summarize_text
+
+modalities:
+  - image
+  - audio
+  - video
+
+ambiguity_types:
+  - lexical_ambiguity
+  - missing_constraints
+  - underspecified_tool_goal
+  - multimodal_conflict
+  - version_drift
+
+tool_statuses:
+  - stable
+  - offline
+  - replaced
+  - newly_added
+
+sources:
+  coco:
+    enabled: true
+    root: data/raw/public/coco
+    annotations:
+      - annotations/captions_train2017.json
+      - annotations/captions_val2017.json
+    image_dirs:
+      - train2017
+      - val2017
+    max_records: 120000
+
+  librispeech:
+    enabled: true
+    root: data/raw/public/librispeech
+    subsets:
+      - train-clean-100
+      - train-clean-360
+      - train-other-500
+    max_records: 120000
+
+  ucf101:
+    enabled: true
+    root: data/raw/public/ucf101
+    video_dirs:
+      - UCF-101
+    max_records: 120000
+
+output:
+  pool_jsonl: data/raw/real_mm_pool.jsonl
+  stats_json: outputs/reports/real_mm_pool_stats.json
+  baseline_train_jsonl: data/splits/baseline1_train.jsonl
+  baseline_dev_jsonl: data/splits/baseline1_dev.jsonl
+  baseline_test_jsonl: data/splits/baseline1_test.jsonl
+  split_audit_json: outputs/reports/real_mm_split_audit.json
+
+split:
+  train_ratio: 0.80
+  dev_ratio: 0.10
+  test_ratio: 0.10
+  unknown_ratio_dev: 0.20
+  unknown_ratio_test: 0.25

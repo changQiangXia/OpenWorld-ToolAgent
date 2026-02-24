@@ -1,0 +1,69 @@
+{
+  "config": "/root/autodl-tmp/project/configs/data/real_public_sources.yaml",
+  "distributions": {
+    "dev_modality": {
+      "audio": 12000,
+      "image": 11997,
+      "video": 1332
+    },
+    "dev_tool": {
+      "__unknown__": 5066,
+      "ocr_image": 2410,
+      "qa_text": 5655,
+      "search_web": 1425,
+      "summarize_text": 4031,
+      "transcribe_audio": 6742
+    },
+    "test_modality": {
+      "audio": 12000,
+      "image": 11997,
+      "video": 1332
+    },
+    "test_tool": {
+      "__unknown__": 6332,
+      "ocr_image": 2300,
+      "qa_text": 5296,
+      "search_web": 1349,
+      "summarize_text": 3740,
+      "transcribe_audio": 6312
+    },
+    "train_modality": {
+      "audio": 96000,
+      "image": 95978,
+      "video": 10656
+    },
+    "train_tool": {
+      "ocr_image": 23845,
+      "qa_text": 56518,
+      "search_web": 14428,
+      "summarize_text": 40418,
+      "transcribe_audio": 67425
+    }
+  },
+  "generated_at_utc": "2026-02-23T13:50:49.390454+00:00",
+  "outputs": {
+    "dev": "/root/autodl-tmp/project/data/splits/baseline1_dev.jsonl",
+    "test": "/root/autodl-tmp/project/data/splits/baseline1_test.jsonl",
+    "train": "/root/autodl-tmp/project/data/splits/baseline1_train.jsonl"
+  },
+  "pool_file": "/root/autodl-tmp/project/data/raw/real_mm_pool.jsonl",
+  "seed": 42,
+  "sizes": {
+    "dev": 25329,
+    "pool": 253292,
+    "test": 25329,
+    "train": 202634
+  },
+  "split_id_hash": {
+    "dev": "d5d4a405b1947702",
+    "test": "b56a840920537426",
+    "train": "548702abf4656a3f"
+  },
+  "unknown": {
+    "dev_converted": 5066,
+    "dev_ratio_actual": 0.20000789608748865,
+    "test_converted": 6332,
+    "test_ratio_actual": 0.24999012989063918,
+    "unknown_token": "__unknown__"
+  }
+}

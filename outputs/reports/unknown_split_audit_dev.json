@@ -1,0 +1,33 @@
+{
+  "actual_ratio": 0.3,
+  "converted_ids_preview": [
+    "dev_00001",
+    "dev_00002",
+    "dev_00005",
+    "dev_00006",
+    "dev_00009",
+    "dev_00013",
+    "dev_00014",
+    "dev_00017",
+    "dev_00022",
+    "dev_00026",
+    "dev_00029",
+    "dev_00033",
+    "dev_00037",
+    "dev_00038",
+    "dev_00041",
+    "dev_00046",
+    "dev_00054",
+    "dev_00057"
+  ],
+  "generated_at_utc": "2026-02-23T03:54:41.111341+00:00",
+  "input_split": "/root/autodl-tmp/project/data/splits/baseline1_dev.jsonl",
+  "num_converted": 18,
+  "num_total": 60,
+  "output_split": "/root/autodl-tmp/project/data/splits/baseline1_dev_unknown.jsonl",
+  "seed": 42,
+  "selected_id_hash": "b0840ada80c009ce",
+  "strategy": "status_aware",
+  "target_ratio": 0.3,
+  "unknown_token": "__unknown__"
+}

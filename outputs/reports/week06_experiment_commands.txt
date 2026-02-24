@@ -1,0 +1,44 @@
+# small_seed42
+bash scripts/train/run_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1_small.yaml --seed 42
+bash scripts/eval/eval_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1_small.yaml --split-name dev
+bash scripts/eval/eval_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1_small.yaml --split-name test
+
+# small_seed43
+bash scripts/train/run_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1_small.yaml --seed 43
+bash scripts/eval/eval_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1_small.yaml --split-name dev
+bash scripts/eval/eval_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1_small.yaml --split-name test
+
+# small_seed44
+bash scripts/train/run_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1_small.yaml --seed 44
+bash scripts/eval/eval_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1_small.yaml --split-name dev
+bash scripts/eval/eval_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1_small.yaml --split-name test
+
+# base_seed42
+bash scripts/train/run_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1.yaml --seed 42
+bash scripts/eval/eval_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1.yaml --split-name dev
+bash scripts/eval/eval_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1.yaml --split-name test
+
+# base_seed43
+bash scripts/train/run_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1.yaml --seed 43
+bash scripts/eval/eval_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1.yaml --split-name dev
+bash scripts/eval/eval_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1.yaml --split-name test
+
+# base_seed44
+bash scripts/train/run_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1.yaml --seed 44
+bash scripts/eval/eval_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1.yaml --split-name dev
+bash scripts/eval/eval_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1.yaml --split-name test
+
+# large_seed42
+bash scripts/train/run_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1_large.yaml --seed 42
+bash scripts/eval/eval_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1_large.yaml --split-name dev
+bash scripts/eval/eval_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1_large.yaml --split-name test
+
+# large_seed43
+bash scripts/train/run_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1_large.yaml --seed 43
+bash scripts/eval/eval_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1_large.yaml --split-name dev
+bash scripts/eval/eval_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1_large.yaml --split-name test
+
+# large_seed44
+bash scripts/train/run_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1_large.yaml --seed 44
+bash scripts/eval/eval_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1_large.yaml --split-name dev
+bash scripts/eval/eval_main_v1.sh --train-config /root/autodl-tmp/project/configs/train/main_v1_large.yaml --split-name test

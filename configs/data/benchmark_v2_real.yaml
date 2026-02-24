@@ -1,0 +1,56 @@
+benchmark_version: benchmark_v2_real
+unknown_token: __unknown__
+source_name: benchmark_v2_real_builder
+
+inputs:
+  train: data/splits/train.jsonl
+  dev: data/splits/dev.jsonl
+  test: data/splits/test.jsonl
+
+inputs_real:
+  train: data/splits/baseline1_train.jsonl
+  dev: data/splits/baseline1_dev.jsonl
+  test: data/splits/baseline1_test.jsonl
+
+outputs:
+  train: data/splits/train_v2_real.jsonl
+  dev: data/splits/dev_v2_real.jsonl
+  test: data/splits/test_v2_real.jsonl
+  subsets_dir: data/splits/subsets_v2_real
+  manifest: data/splits/benchmark_v2_real_manifest.json
+  build_report: outputs/reports/benchmark_v2_real_build_report.json
+  quality_report: outputs/reports/benchmark_v2_real_quality_report.json
+  report_md: docs/benchmark_v2_real_report.md
+  changelog_md: data/splits/benchmark_v2_real_changelog.md
+
+annotation_defaults:
+  guideline_version: bench_v2_guideline_v1
+  annotator_id: auto_builder
+  reviewer_id: auto_reviewer
+  label_source: hybrid
+  review_status: final
+  known_confidence: 0.80
+  unknown_confidence: 0.70
+
+unknown_reason_defaults:
+  default: missing_capability
+  by_tool_status:
+    offline: tool_unavailable
+    replaced: version_incompatible
+    newly_added: missing_capability
+    stable: missing_capability
+
+build:
+  real_data_first: true
+  query_strategy: auto
+  strip_split_tags: true
+  drop_template_queries: true
+  force_include_gold_in_candidates: true
+  subset_keys:
+    - modality
+    - tool_status
+    - mapping_type
+    - ambiguity_type
+    - unknown_reason_type
+    - is_unknown_gold
+  trace_notes: converted to benchmark_v2 schema (real-data-first)

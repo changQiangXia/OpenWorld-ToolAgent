@@ -1,0 +1,83 @@
+{
+  "artifacts": {
+    "dev_report": "/root/autodl-tmp/project/outputs/reports/20260223_open_world_tool_agent_main_v1_mm_openworld_42.json",
+    "error_dev": "/root/autodl-tmp/project/outputs/reports/main_v1_week06_dev_seed42.json",
+    "error_summary": "/root/autodl-tmp/project/outputs/reports/main_v1_week06_summary_seed42.json",
+    "error_test": "/root/autodl-tmp/project/outputs/reports/main_v1_week06_test_seed42.json",
+    "test_report": "/root/autodl-tmp/project/outputs/reports/20260223_open_world_tool_agent_main_v1_mm_openworld_42_test_eval.json"
+  },
+  "error_summary": {
+    "combined": {
+      "category_counts": {
+        "hallucination": 20,
+        "one_to_many_miss": 10,
+        "reject_failure_unknown_miss": 31,
+        "success": 30,
+        "wrong_tool_selection": 29
+      },
+      "error_rate": 0.75,
+      "root_cause_counts": {
+        "one_to_many_alignment_gap": 6,
+        "retrieval_miss": 24,
+        "selector_confusion": 29,
+        "unknown_calibration_failure": 31
+      }
+    },
+    "dev": {
+      "category_counts": {
+        "hallucination": 8,
+        "one_to_many_miss": 5,
+        "reject_failure_unknown_miss": 19,
+        "success": 14,
+        "wrong_tool_selection": 14
+      },
+      "error_rate": 0.7666666666666667,
+      "root_cause_counts": {
+        "one_to_many_alignment_gap": 4,
+        "retrieval_miss": 9,
+        "selector_confusion": 14,
+        "unknown_calibration_failure": 19
+      }
+    },
+    "test": {
+      "category_counts": {
+        "hallucination": 12,
+        "one_to_many_miss": 5,
+        "reject_failure_unknown_miss": 12,
+        "success": 16,
+        "wrong_tool_selection": 15
+      },
+      "error_rate": 0.7333333333333333,
+      "root_cause_counts": {
+        "one_to_many_alignment_gap": 2,
+        "retrieval_miss": 15,
+        "selector_confusion": 15,
+        "unknown_calibration_failure": 12
+      }
+    }
+  },
+  "exp_id": "20260223_open_world_tool_agent_main_v1_mm_openworld_42",
+  "main_metrics": {
+    "dev": {
+      "avg_cost_per_request_usd": 0.0,
+      "avg_latency_ms": 0.27119374523560186,
+      "end_to_end_success_rate": 0.23333333333333334,
+      "hallucination_rate": 0.45,
+      "json_valid_rate": 1.0,
+      "num_predictions": 60.0,
+      "tool_selection_accuracy": 0.34146341463414637,
+      "unknown_detection_f1": 0.0
+    },
+    "test": {
+      "avg_cost_per_request_usd": 0.0,
+      "avg_latency_ms": 0.315936841070652,
+      "end_to_end_success_rate": 0.26666666666666666,
+      "hallucination_rate": 0.5333333333333333,
+      "json_valid_rate": 1.0,
+      "num_predictions": 60.0,
+      "tool_selection_accuracy": 0.3333333333333333,
+      "unknown_detection_f1": 0.0
+    }
+  },
+  "seed": 42
+}

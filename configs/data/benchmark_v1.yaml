@@ -1,0 +1,23 @@
+benchmark_version: benchmark_v1
+annotation_version: ann_v1
+source_name: baseline1_synthetic
+
+inputs:
+  train: data/splits/baseline1_train.jsonl
+  dev: data/splits/baseline1_dev.jsonl
+  test: data/splits/baseline1_test.jsonl
+
+outputs:
+  train: data/splits/train.jsonl
+  dev: data/splits/dev.jsonl
+  test: data/splits/test.jsonl
+  subsets_dir: data/splits/subsets
+  manifest: data/splits/benchmark_v1_manifest.json
+  quality_report: outputs/reports/benchmark_v1_quality_report.json
+  report_md: docs/benchmark_v1_report.md
+  changelog_md: data/splits/benchmark_v1_changelog.md
+
+build:
+  seed: 42
+  one_to_many_ratio: 0.25
+  unknown_token: __unknown__
